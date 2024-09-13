@@ -2,7 +2,8 @@
 module.exports = {
   content: [
     "./src/**/*.{html,js}",
-    './pages/**/*.{html,js}'
+    './pages/**/*.{html,js}',
+    "./node_modules/tw-elements/js/**/*.js"
   ],
   theme: {
     extend: {
@@ -128,10 +129,15 @@ module.exports = {
          'gr-violet-86': 'linear-gradient(to right, theme(colors.violet8) 0%, theme(colors.violet6) 100%)',
          'gr-violet-108': 'linear-gradient(to right, theme(colors.violet10) 0%, theme(colors.violet8) 100%)',
          'gr-violet-12': 'linear-gradient(to right, theme(colors.violet1) 0%, theme(colors.violet2) 100%)',
+       },
+
+       boxShadow: {
+        'box1': '0 12px 24px 0 theme(colors.violet8 / 25%)',
        }
        
     },
   },
-  plugins: [],
+  plugins: [require("tw-elements/plugin.cjs")],
+  darkMode: "class"
 }
 

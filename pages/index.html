@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="../src/css/output.css">
     <link rel="stylesheet" href="../src/css/style.css">
 
+    <!-- Pagedone CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css " rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
+
     <!-- Sora Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +24,13 @@
 
 <body class="">
     <!-- Navbar -->
-    <nav class="bg-gr-violet-12 py-[12px] px-[16px] flex justify-between">
-        <div class="">
-            <img src="../src/img/logo-puskurjar-text.svg" alt="">
+    <nav class="bg-gr-violet-12 py-[12px] px-[16px] flex justify-between items-center lg:px-[160px] lg:py-[24px]">
+        <div class="flex gap-[] lg:gap-[24px]">
+            <img class="lg:h-[64px] hidden lg:block" src="../src/img/tutwuri-logo.png" alt="">
+            <img class="lg:h-[64px]" src="../src/img/logo-puskurjar-text.svg" alt="">
         </div>
-        <a href="#">
-            <img src="../src/img/hamburger.svg" alt="">
+        <a class="" href="#">
+            <img class="" src="../src/img/hamburger.svg" alt="">
         </a>
     </nav>
     <!-- Navbar End -->
@@ -31,15 +38,164 @@
     <!-- Hero Section -->
     <div
         class="px-[16px] py-[16px] mb-[40px] lg:grid lg:grid-cols-2 lg:gap-[32px] lg:px-[160px] lg:py-[80px] lg:mb-[200px]">
-        <div class="order-last">
-            <img class="w-full mb-6" src="../src/img/hero-section.png" alt="">
+        <div class="order-last carousel-slider">
+            <!-- carousel-1 -->
+            <div class="w-full relative mb-[24px]">
+                <div class="swiper centered-slide-carousel-1 swiper-container relative">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/7.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/8.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/9.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/10.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/11.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/12.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- carousel-2 -->
+            <div class="w-full relative mb-[24px]">
+                <div class="swiper centered-slide-carousel-2 swiper-container relative">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- carousel-3 -->
+            <div class="w-full relative mb-[24px]">
+                <div class="swiper centered-slide-carousel-3 swiper-container relative">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/13.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/14.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/15.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/16.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/17.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[16px] opacity-15">
+                                </div>
+                                <img class="rounded-[16px]" src="../src/img/documentation/18.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
         <div class="">
-            <h4 class="text-[34px] font-semibold text-biru11 lg:text-[68px] mb-3">Mari Berkolaborasi Dalam Perkembangan
+            <h4 class="text-[34px] font-semibold text-violet11 lg:text-[68px] mb-3">Mari Berkolaborasi <br> Dalam
+                Perkembangan
                 <span class="text-biru6">Kurikulum</span>
             </h4>
-            <!-- <p class="text-biru11 text-[18px] font-semibold mb-3">Selamat Datang Sahabat <span
-                    class="text-biru6">Kurikulum!</span>👋</p> -->
             <p class="text-biruLaut9 leading-[180%] lg:text-[20px] mb-3">Saat ini, Sahabat berada di halaman informasi
                 pendaftaran
                 Kontributor
@@ -62,7 +218,8 @@
                 <img class="w-fit mb-6" src="../src/img/content1.png" alt="">
             </div>
             <div class="w-full col-span-7">
-                <h2 class="font-semibold text-[24px] leading-[150%] lg:text-[64px] mb-[10px]">Apa itu Lorem ipsum dolor
+                <h2 class="font-semibold text-[24px] text-violet11 leading-[150%] lg:text-[64px] mb-[10px]">Apa itu
+                    Lorem ipsum dolor
                     sit amet,
                     adipiscing
                     elit.
@@ -88,7 +245,8 @@
                 <img class="w-fit mb-6" src="../src/img/content2.png" alt="">
             </div>
             <div class="w-full col-span-7">
-                <h2 class="font-semibold text-[24px] leading-[150%] lg:text-[64px] mb-[10px]">Mengapa kontribusi Anda
+                <h2 class="font-semibold text-[24px] text-violet11 leading-[150%] lg:text-[64px] mb-[10px]">Mengapa
+                    kontribusi Anda
                     berarti?
                 </h2>
                 <p class="text-biruLaut10 leading-[180%] lg:text-[20px]">Kontributor pengembangan kurikulum adalah
@@ -106,14 +264,15 @@
     </div>
     <!-- content 2 End -->
 
-    <!-- content 2 -->
+    <!-- content 3 -->
     <div class="px-[16px] mb-[40px] lg:mb-[200px] lg:px-[160px] ">
         <div class="lg:grid grid-cols-12 lg:gap-[32px] items-start">
             <div class="w-full flex col-span-5 justify-center">
                 <img class="w-fit mb-6" src="../src/img/content3.png" alt="">
             </div>
             <div class="w-full col-span-7">
-                <h2 class="font-semibold text-[24px] leading-[150%] lg:text-[64px] mb-[10px]">Siapa kontribusi Anda
+                <h2 class="font-semibold text-[24px] text-violet11 leading-[150%] lg:text-[64px] mb-[10px]">Siapa
+                    kontribusi Anda
                     berarti?
                 </h2>
                 <p class="text-biruLaut10 leading-[180%] lg:text-[20px]">Kontributor pengembangan kurikulum adalah
@@ -129,11 +288,413 @@
         </div>
     </div>
     </div>
-    <!-- content 2 End -->
+    <!-- content 3 End -->
+
+    <!-- content 4 -->
+    <div class="px-[16px] mb-[40px] lg:mb-[200px] lg:px-[160px]">
+        <div class="block">
+            <h3 class="text-violet11 text-center text-[24px] lg:text-[48px] lg:mb-[64px]">Temukan Manfaat Luar Biasa
+                dari <br>
+                Bimtek ini untuk Bapak dan Ibu Guru</h3>
+            <div class="relative flex justify-center">
+                <img src="../src/img/manfaat.svg" alt="">
+
+                <!-- manfaat 1 -->
+                <div
+                    class="scale-[0.7] lg:scale-[1] hidden lg:block absolute lg:left-[136px] lg:top-0 bg-white border border-[1px] border-violet8 rounded-[32px] p-[20px] w-[534px] shadow-box1">
+                    <div class="grid grid-cols-4 gap-[16px]">
+                        <div class="col-span-1 p-[14px] bg-gr-violet-86 rounded-[20px]">
+                            <img class="" src="../src/img/icon/manfaat1.svg" alt="">
+                        </div>
+                        <div class="block col-span-3">
+                            <p class="text-biru11 leading-[180%] mb-1">Meningkatkan Pengetahuan dan Kompetensi dalam
+                                Pembelajaran
+                                yang Efektif
+                            </p>
+                            <p class="text-biruLaut9 text-[12px] leading-[180%]">Meningkatkan pemahaman teknis
+                                penyusunan
+                                Modul
+                                Ajar,
+                                dan Modul Projek
+                                yang
+                                sesuai ketentuan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- manfaat 2 -->
+                <div
+                    class="scale-[0.7] lg:scale-[1] hidden lg:block absolute lg:left-0 lg:top-[210px] bg-white border border-[1px] border-violet8 rounded-[32px] p-[20px] w-[534px] shadow-box1">
+                    <div class="grid grid-cols-4 gap-[16px]">
+                        <div class="col-span-1 p-[14px] bg-gr-violet-86 rounded-[20px]">
+                            <img class="" src="../src/img/icon/manfaat2.svg" alt="">
+                        </div>
+                        <div class="block col-span-3">
+                            <p class="text-biru11 leading-[180%] mb-1">Meningkatkan Pengetahuan dan Kompetensi dalam
+                                Pembelajaran
+                                yang Efektif
+                            </p>
+                            <p class="text-biruLaut9 text-[12px] leading-[180%]">Meningkatkan pemahaman teknis
+                                penyusunan
+                                Modul
+                                Ajar,
+                                dan Modul Projek
+                                yang
+                                sesuai ketentuan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- manfaat 3 -->
+                <div
+                    class="scale-[0.7] lg:scale-[1] hidden lg:block absolute lg:right-[136px] lg:top-0 bg-white border border-[1px] border-violet8 rounded-[32px] p-[20px] w-[534px] shadow-box1">
+                    <div class="grid grid-cols-4 gap-[16px]">
+                        <div class="col-span-1 p-[14px] bg-gr-violet-86 rounded-[20px]">
+                            <img class="" src="../src/img/icon/manfaat3.svg" alt="">
+                        </div>
+                        <div class="block col-span-3">
+                            <p class="text-biru11 leading-[180%] mb-1">Meningkatkan Pengetahuan dan Kompetensi dalam
+                                Pembelajaran
+                                yang Efektif
+                            </p>
+                            <p class="text-biruLaut9 text-[12px] leading-[180%]">Meningkatkan pemahaman teknis
+                                penyusunan
+                                Modul
+                                Ajar,
+                                dan Modul Projek
+                                yang
+                                sesuai ketentuan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- manfaat 4 -->
+                <div
+                    class="scale-[0.7] lg:scale-[1] hidden lg:block absolute lg:right-0 lg:top-[210px] bg-white border border-[1px] border-violet8 rounded-[32px] p-[20px] w-[534px] shadow-box1">
+                    <div class="grid grid-cols-4 gap-[16px]">
+                        <div class="col-span-1 p-[14px] bg-gr-violet-86 rounded-[20px]">
+                            <img class="" src="../src/img/icon/manfaat4.svg" alt="">
+                        </div>
+                        <div class="block col-span-3">
+                            <p class="text-biru11 leading-[180%] mb-1">Meningkatkan Pengetahuan dan Kompetensi dalam
+                                Pembelajaran
+                                yang Efektif
+                            </p>
+                            <p class="text-biruLaut9 text-[12px] leading-[180%]">Meningkatkan pemahaman teknis
+                                penyusunan
+                                Modul
+                                Ajar,
+                                dan Modul Projek
+                                yang
+                                sesuai ketentuan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- manfaat di luar -->
+            <div class="grid justify-center">
+                <!-- manfaat 1 -->
+                <div
+                    class="lg:hidden bg-white border border-[1px] border-violet8 rounded-[16px] p-[12px] w-[374px] shadow-box1 mb-[16px]">
+                    <div class="grid grid-cols-4 gap-[16px]">
+                        <div class="col-span-1 p-[8px] bg-gr-violet-86 rounded-[10px] flex justify-center items-center">
+                            <img class="" src="../src/img/icon/manfaat1.svg" alt="">
+                        </div>
+                        <div class="block col-span-3">
+                            <p class="text-biru11 text-[12px] leading-[150%]">Meningkatkan Pengetahuan dan
+                                Kompetensi dalam
+                                Pembelajaran
+                            </p>
+                            <p class="text-biruLaut9 text-[10px] leading-[150%]">Meningkatkan pemahaman teknis
+                                penyusunan
+                                Modul
+                                Ajar,
+                                dan Modul Projek
+                                yang
+                                sesuai ketentuan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- manfaat 2 -->
+                <div
+                    class="lg:hidden bg-white border border-[1px] border-violet8 rounded-[16px] p-[12px] w-[374px] shadow-box1 mb-[16px]">
+                    <div class="grid grid-cols-4 gap-[16px]">
+                        <div class="col-span-1 p-[8px] bg-gr-violet-86 rounded-[10px] flex justify-center items-center">
+                            <img class="" src="../src/img/icon/manfaat2.svg" alt="">
+                        </div>
+                        <div class="block col-span-3">
+                            <p class="text-biru11 text-[12px] leading-[150%]">Meningkatkan Pengetahuan dan
+                                Kompetensi dalam
+                                Pembelajaran
+                            </p>
+                            <p class="text-biruLaut9 text-[10px] leading-[150%]">Meningkatkan pemahaman teknis
+                                penyusunan
+                                Modul
+                                Ajar,
+                                dan Modul Projek
+                                yang
+                                sesuai ketentuan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- manfaat 3 -->
+                <div
+                    class="lg:hidden bg-white border border-[1px] border-violet8 rounded-[16px] p-[12px] w-[374px] shadow-box1 mb-[16px]">
+                    <div class="grid grid-cols-4 gap-[16px]">
+                        <div class="col-span-1 p-[8px] bg-gr-violet-86 rounded-[10px] flex justify-center items-center">
+                            <img class="" src="../src/img/icon/manfaat3.svg" alt="">
+                        </div>
+                        <div class="block col-span-3">
+                            <p class="text-biru11 text-[12px] leading-[150%]">Meningkatkan Pengetahuan dan
+                                Kompetensi dalam
+                                Pembelajaran
+                            </p>
+                            <p class="text-biruLaut9 text-[10px] leading-[150%]">Meningkatkan pemahaman teknis
+                                penyusunan
+                                Modul
+                                Ajar,
+                                dan Modul Projek
+                                yang
+                                sesuai ketentuan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- manfaat 4 -->
+                <div
+                    class="lg:hidden bg-white border border-[1px] border-violet8 rounded-[16px] p-[12px] w-[374px] shadow-box1 mb-[16px]">
+                    <div class="grid grid-cols-4 gap-[16px]">
+                        <div class="col-span-1 p-[8px] bg-gr-violet-86 rounded-[10px] flex justify-center items-center">
+                            <img class="" src="../src/img/icon/manfaat4.svg" alt="">
+                        </div>
+                        <div class="block col-span-3">
+                            <p class="text-biru11 text-[12px] leading-[150%]">Meningkatkan Pengetahuan dan
+                                Kompetensi dalam
+                                Pembelajaran
+                            </p>
+                            <p class="text-biruLaut9 text-[10px] leading-[150%]">Meningkatkan pemahaman teknis
+                                penyusunan
+                                Modul
+                                Ajar,
+                                dan Modul Projek
+                                yang
+                                sesuai ketentuan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- content 4 End -->
+
+    <!-- NavPills Tab -->
+    <div class="px-[16px] lg:px-[160px] mb-[40px] lg:mb-[200px]">
+        <!--Tabs navigation-->
+        <ul class="mb-5 block lg:flex list-none flex-row flex-wrap" role="tablist" data-twe-nav-ref>
+            <li role="presentation" class="flex-auto text-center">
+                <a href="#tabs-home01"
+                    class="my-2 block px-[16px] py-[16px] text-[16px] rounded-[12px] lg:text-[20px] leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-gr-violet-86 hover:text-white focus:isolate focus:border-transparent data-[twe-nav-active]:bg-gr-violet-86 data-[twe-nav-active]:text-white"
+                    data-twe-toggle="pill" data-twe-target="#tabs-home01" data-twe-nav-active role="tab"
+                    aria-controls="tabs-home01" aria-selected="true">Persyaratan Kontributor</a>
+            </li>
+            <li role="presentation" class="flex-auto text-center">
+                <a href="#tabs-profile01"
+                    class="my-2 block px-[16px] py-[16px] text-[16px] rounded-[12px] lg:text-[20px] leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-gr-violet-86 hover:text-white focus:isolate focus:border-transparent data-[twe-nav-active]:bg-gr-violet-86 data-[twe-nav-active]:text-white"
+                    data-twe-toggle="pill" data-twe-target="#tabs-profile01" role="tab" aria-controls="tabs-profile01"
+                    aria-selected="false">Alur Pendaftaran</a>
+            </li>
+            <li role="presentation" class="flex-auto text-center">
+                <a href="#tabs-messages01"
+                    class="my-2 block px-[16px] py-[16px] text-[16px] rounded-[12px] lg:text-[20px] leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-gr-violet-86 hover:text-white focus:isolate focus:border-transparent data-[twe-nav-active]:bg-gr-violet-86 data-[twe-nav-active]:text-white"
+                    data-twe-toggle="pill" data-twe-target="#tabs-messages01" role="tab" aria-controls="tabs-messages01"
+                    aria-selected="false">Alur Pelaksanaan</a>
+            </li>
+        </ul>
+
+        <!--Tabs content-->
+        <div class="mb-6">
+            <!-- Tabs content 1 -->
+            <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                id="tabs-home01" role="tabpanel" aria-labelledby="tabs-home-tab01" data-twe-tab-active>
+                <div class="lg:grid lg:grid-cols-12">
+                    <div class="col-span-7">
+                        <h3 class="text-[20px] lg:text-[48px] text-violet11">Persyaratan Kontributor</h3>
+                        <p class="text-[16px] lg:text-[20px] text-biruLaut9 mb-[36px]">Last updated: 01 September 2024
+                        </p>
+
+                        <div class="lg:hidden col-span-5 flex justify-center items-center">
+                            <img src="../src/img/persyaratan.svg" alt="">
+                        </div>
+
+                        <p class="text-[20px] lg:text-[24px] text-violet11 leading-[150%]">Pastikan Anda sesuai dengan
+                            Kriteria
+                            berikut:</p>
+                        <p class="text-[16px] lg:text-[20px] text-biruLaut10 mb-[12px]">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit. Ut et massa mi. Aliquam in hendrerit
+                            urna. Pellentesque sit
+                            amet sapien fringilla, mattis ligula consectetur.</p>
+                        <div class="lg:text-[20px] text-biruLaut10">
+                            <p>1. Lorem Ipsum dolor sit amet</p>
+                            <p>2. Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>3. Lorem Ipsum dolor sit amet</p>
+                            <p>4. Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>5. Lorem Ipsum dolor sit amet</p>
+                            <p>6. Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="hidden lg:block col-span-5 flex justify-center items-center">
+                        <img src="../src/img/persyaratan.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Tabs content 2 -->
+            <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                id="tabs-profile01" role="tabpanel" aria-labelledby="tabs-profile-tab01">
+                <h3 class="text-[20px] lg:text-[48px] text-violet11">Alur Pendaftaran</h3>
+                <p class="text-[16px] lg:text-[20px] text-biruLaut9 mb-[36px]">Last updated: 01 September 2024
+                </p>
+                <div class="flex justify-center items-center">
+                    <img src="../src/img/pendaftaran.svg" alt="">
+                </div>
+            </div>
+            <!-- Tabs content 3 -->
+            <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                id="tabs-messages01" role="tabpanel" aria-labelledby="tabs-profile-tab01">
+                <h3 class="text-[20px] lg:text-[48px] text-violet11">Alur Pelaksanaan</h3>
+                <p class="text-[16px] lg:text-[20px] text-biruLaut9 mb-[36px]">Last updated: 01 September 2024
+                <p class="text-[16px] lg:text-[20px] text-biruLaut10 max-w-[1180px] mb-[84px]">Lorem ipsum dolor sit
+                    amet,
+                    consectetur adipiscing
+                    elit. Ut et
+                    massa mi. Aliquam in hendrerit urna. Pellentesque sit
+                    amet sapien fringilla, mattis ligula consectetur.</p>
+                <div class="grid-cols-12 block lg:flex justify-center">
+                    <div class="flex justify-center mb-[16px] lg:mb-0">
+                        <div class="col-span-3 max-w-[376px]">
+                            <div class="flex justify-center mb-[14px]">
+                                <img class="p-[32px] bg-gr-hijau-12 rounded-[32px]" src="../src/img/icon/ap1.svg"
+                                    alt="">
+                            </div>
+                            <h4 class="text-[24px] lg:text-[32px] text-violet11 text-center mb-[12px]">1. Training</h4>
+                            <p class="lg:text-[20px] text-biruLaut10 text-center">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit. Ut et massa mi. Aliquam in hendrerit. Pellentesque sit amet
+                                sapien fringilla,</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <img class="h-full hidden lg:block" src="../src/img/icon/dash-arrow1.svg" alt="">
+                    </div>
+                    <div class="flex justify-center mb-[16px] lg:mb-0">
+                        <div class="col-span-3 max-w-[376px]">
+                            <div class="flex justify-center mb-[14px]">
+                                <img class="p-[32px] bg-gr-hijau-12 rounded-[32px]" src="../src/img/icon/ap2.svg"
+                                    alt="">
+                            </div>
+                            <h4 class="text-[24px] lg:text-[32px] text-violet11 text-center mb-[12px]">2. Training</h4>
+                            <p class="lg:text-[20px] text-biruLaut10 text-center">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit. Ut et massa mi. Aliquam in hendrerit. Pellentesque sit amet
+                                sapien fringilla,</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <img class="h-full hidden lg:block" src="../src/img/icon/dash-arrow2.svg" alt="">
+                    </div>
+                    <div class="flex justify-center mb-[16px] lg:mb-0">
+                        <div class="col-span-3 max-w-[376px]">
+                            <div class="flex justify-center mb-[14px]">
+                                <img class="p-[32px] bg-gr-hijau-12 rounded-[32px]" src="../src/img/icon/ap3.svg"
+                                    alt="">
+                            </div>
+                            <h4 class="text-[24px] lg:text-[32px] text-violet11 text-center mb-[12px]">3. Training</h4>
+                            <p class="lg:text-[20px] text-biruLaut10 text-center">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit. Ut et massa mi. Aliquam in hendrerit. Pellentesque sit amet
+                                sapien fringilla,</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NavPills TabEnd -->
 
     <!-- Footer -->
+    <div class="bg-violet11 block lg:grid grid-cols-12 px-[16px] py-[40px] lg:px-[160px] lg:py-[80px]">
+        <div class="lg:col-span-6">
+            <img class="h-[60px] mb-4 lg:h-[80px] lg:mb-6" src="../src/img/logo-puskurjar-text-white.svg" alt="">
+            <p class="text-white text-[14px] mb-4 lg:text-[20px] lg:leading-[180%] lg:mb-[64px]">Lorem ipsum dolor sit,
+                amet
+                consectetur
+                adipisicing elit. <br>
+                Corporis,
+                culpa!
+            </p>
+            <div class="flex gap-[32px] mb-4 lg:mb-[64px]">
+                <a href="#">
+                    <img src="../src/img/icon/x.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="../src/img/icon/ig.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="../src/img/icon/fb.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="../src/img/icon/thread.svg" alt="">
+                </a>
+            </div>
+            <p class="text-white mb-4">Hak Cipta &copy; 2024 Pusat Kurikulum dan Pembelajaran
+            </p>
+        </div>
+        <div class="flex text-white text-[12px] lg:text-[16px] justify-between lg:col-span-6">
+            <div class="block">
+                <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Product</h5>
+                <div class="grid">
+                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                </div>
+            </div>
+            <div class="block">
+                <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Company</h5>
+                <div class="grid">
+                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                </div>
+            </div>
+            <div class="block">
+                <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Social</h5>
+                <div class="grid">
+                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                </div>
+            </div>
 
+        </div>
+    </div>
     <!-- Footer End -->
+
+
+    <!-- Pagedone Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
+
+    <!-- Javascript -->
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/tw-element.js"></script>
+    <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
 </body>
 
 </html>

@@ -4,5 +4,9 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.10"
+  },
+  "dependencies": {
+    "pagedone": "^1.2.2",
+    "tw-elements": "^2.0.0"
   }
 }
