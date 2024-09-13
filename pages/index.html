@@ -25,19 +25,35 @@
 <body class="">
     <!-- Navbar -->
     <nav class="bg-gr-violet-12 py-[12px] px-[16px] flex justify-between items-center lg:px-[160px] lg:py-[24px]">
-        <div class="flex gap-[] lg:gap-[24px]">
-            <img class="lg:h-[64px] hidden lg:block" src="../src/img/tutwuri-logo.png" alt="">
-            <img class="lg:h-[64px]" src="../src/img/logo-puskurjar-text.svg" alt="">
+        <div class="flex items-center gap-[120px]">
+            <div class="flex lg:gap-[24px]">
+                <img class="lg:h-[64px] hidden lg:block" src="../src/img/tutwuri-logo.png" alt="">
+                <img class="lg:h-[64px]" src="../src/img/logo-puskurjar-text.svg" alt="">
+            </div>
+            <div class="hidden gap-[28px] lg:flex">
+                <a class="text-[16px] text-violet8 lg:text-[20px] hover:text-violet10" href="#apa">Beranda</a>
+                <a class="text-[16px] text-violet8 lg:text-[20px] hover:text-violet10" href="#tatacara">Tata Cara</a>
+                <a class="text-[16px] text-violet8 lg:text-[20px] hover:text-violet10" href="#seringditanya">Sering
+                    Ditanya</a>
+            </div>
         </div>
-        <a class="" href="#">
-            <img class="" src="../src/img/hamburger.svg" alt="">
-        </a>
+        <div class="flex gap-[24px]">
+            <img class="block lg:hidden" src="../src/img/hamburger.svg" alt="">
+            <a class="hidden lg:block " href="login.html">
+                <button
+                    class="px-[20px] py-[10px] border border-violet6 border-[1px] rounded-[10px] text-violet11 text-[20px] hover:bg-gr-violet-86 hover:text-white">Masuk</button>
+            </a>
+            <a class="hidden lg:block " href="./regist.html">
+                <button
+                    class="px-[20px] py-[10px] bg-gr-violet-86 text-white rounded-[10px] text-violet11 text-[20px] hover:bg-gr-violet-108 hover:text-white">Buat
+                    Akun</button>
+            </a>
+        </div>
     </nav>
     <!-- Navbar End -->
 
     <!-- Hero Section -->
-    <div
-        class="px-[16px] py-[16px] mb-[40px] lg:grid lg:grid-cols-2 lg:gap-[32px] lg:px-[160px] lg:py-[80px] lg:mb-[200px]">
+    <div class="px-[16px] py-[16px] lg:grid lg:grid-cols-2 lg:gap-[32px] lg:px-[160px] lg:py-[80px]">
         <div class="order-last carousel-slider">
             <!-- carousel-1 -->
             <div class="w-full relative mb-[24px]">
@@ -212,7 +228,7 @@
     <!-- Hero Section End -->
 
     <!-- content 1 -->
-    <div class="px-[16px] mb-[40px] lg:mb-[200px] lg:px-[160px] ">
+    <div id="apa" class="px-[16px] pt-[40px] lg:pt-[200px] lg:px-[160px] ">
         <div class="lg:grid grid-cols-12 lg:gap-[32px] items-start">
             <div class="w-full flex col-span-5 justify-center">
                 <img class="w-fit mb-6" src="../src/img/content1.png" alt="">
@@ -239,7 +255,7 @@
     <!-- content 1 End -->
 
     <!-- content 2 -->
-    <div class="px-[16px] mb-[40px] lg:mb-[200px] lg:px-[160px] ">
+    <div class="px-[16px] pt-[40px] lg:pt-[200px] lg:px-[160px] ">
         <div class="lg:grid grid-cols-12 lg:gap-[32px] items-start">
             <div class="w-full flex col-span-5 justify-center order-last">
                 <img class="w-fit mb-6" src="../src/img/content2.png" alt="">
@@ -265,7 +281,7 @@
     <!-- content 2 End -->
 
     <!-- content 3 -->
-    <div class="px-[16px] mb-[40px] lg:mb-[200px] lg:px-[160px] ">
+    <div class="px-[16px] pt-[40px] lg:pt-[200px] lg:px-[160px] ">
         <div class="lg:grid grid-cols-12 lg:gap-[32px] items-start">
             <div class="w-full flex col-span-5 justify-center">
                 <img class="w-fit mb-6" src="../src/img/content3.png" alt="">
@@ -291,7 +307,7 @@
     <!-- content 3 End -->
 
     <!-- content 4 -->
-    <div class="px-[16px] mb-[40px] lg:mb-[200px] lg:px-[160px]">
+    <div class="px-[16px] pt-[40px] lg:pt-[200px] lg:px-[160px]">
         <div class="block">
             <h3 class="text-violet11 text-center text-[24px] lg:text-[48px] lg:mb-[64px]">Temukan Manfaat Luar Biasa
                 dari <br>
@@ -494,17 +510,17 @@
     <!-- content 4 End -->
 
     <!-- NavPills Tab -->
-    <div class="px-[16px] lg:px-[160px] mb-[40px] lg:mb-[200px]">
+    <div class="px-[16px] lg:px-[160px] pt-[40px] lg:pt-[200px]">
         <!--Tabs navigation-->
         <ul class="mb-5 block lg:flex list-none flex-row flex-wrap" role="tablist" data-twe-nav-ref>
             <li role="presentation" class="flex-auto text-center">
-                <a href="#tabs-home01"
+                <a id="seringditanya" href="#tabs-home01"
                     class="my-2 block px-[16px] py-[16px] text-[16px] rounded-[12px] lg:text-[20px] leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-gr-violet-86 hover:text-white focus:isolate focus:border-transparent data-[twe-nav-active]:bg-gr-violet-86 data-[twe-nav-active]:text-white"
                     data-twe-toggle="pill" data-twe-target="#tabs-home01" data-twe-nav-active role="tab"
                     aria-controls="tabs-home01" aria-selected="true">Persyaratan Kontributor</a>
             </li>
             <li role="presentation" class="flex-auto text-center">
-                <a href="#tabs-profile01"
+                <a id="tatacara" href="#tabs-profile01"
                     class="my-2 block px-[16px] py-[16px] text-[16px] rounded-[12px] lg:text-[20px] leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-gr-violet-86 hover:text-white focus:isolate focus:border-transparent data-[twe-nav-active]:bg-gr-violet-86 data-[twe-nav-active]:text-white"
                     data-twe-toggle="pill" data-twe-target="#tabs-profile01" role="tab" aria-controls="tabs-profile01"
                     aria-selected="false">Alur Pendaftaran</a>
@@ -628,61 +644,64 @@
     <!-- NavPills TabEnd -->
 
     <!-- Footer -->
-    <div class="bg-violet11 block lg:grid grid-cols-12 px-[16px] py-[40px] lg:px-[160px] lg:py-[80px]">
-        <div class="lg:col-span-6">
-            <img class="h-[60px] mb-4 lg:h-[80px] lg:mb-6" src="../src/img/logo-puskurjar-text-white.svg" alt="">
-            <p class="text-white text-[14px] mb-4 lg:text-[20px] lg:leading-[180%] lg:mb-[64px]">Lorem ipsum dolor sit,
-                amet
-                consectetur
-                adipisicing elit. <br>
-                Corporis,
-                culpa!
-            </p>
-            <div class="flex gap-[32px] mb-4 lg:mb-[64px]">
-                <a href="#">
-                    <img src="../src/img/icon/x.svg" alt="">
-                </a>
-                <a href="#">
-                    <img src="../src/img/icon/ig.svg" alt="">
-                </a>
-                <a href="#">
-                    <img src="../src/img/icon/fb.svg" alt="">
-                </a>
-                <a href="#">
-                    <img src="../src/img/icon/thread.svg" alt="">
-                </a>
-            </div>
-            <p class="text-white mb-4">Hak Cipta &copy; 2024 Pusat Kurikulum dan Pembelajaran
-            </p>
-        </div>
-        <div class="flex text-white text-[12px] lg:text-[16px] justify-between lg:col-span-6">
-            <div class="block">
-                <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Product</h5>
-                <div class="grid">
-                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
-                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
-                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+    <footer class="bg-violet11 block lg:grid grid-cols-12 px-[16px] py-[40px] lg:px-[160px] lg:py-[80px]">
+        <div class="block lg:flex justify-between">
+            <div class="lg:col-span-6 w-full mb-[36px]">
+                <img class="h-[60px] mb-4 lg:h-[80px] lg:mb-6" src="../src/img/logo-puskurjar-text-white.svg" alt="">
+                <p class="text-white text-[14px] mb-4 lg:text-[20px] lg:leading-[180%] lg:mb-[64px]">Lorem ipsum dolor
+                    sit,
+                    amet
+                    consectetur
+                    adipisicing elit. <br>
+                    Corporis,
+                    culpa!
+                </p>
+                <div class="flex gap-[32px] mb-4 lg:mb-[64px]">
+                    <a href="#">
+                        <img src="../src/img/icon/x.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../src/img/icon/ig.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../src/img/icon/fb.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../src/img/icon/thread.svg" alt="">
+                    </a>
                 </div>
+                <p class="text-white mb-4">Hak Cipta &copy; 2024 Pusat Kurikulum dan Pembelajaran
+                </p>
             </div>
-            <div class="block">
-                <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Company</h5>
-                <div class="grid">
-                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
-                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
-                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+            <div class="flex text-white text-[12px] lg:text-[16px] justify-between lg:col-span-6 w-full">
+                <div class="block">
+                    <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Product</h5>
+                    <div class="grid">
+                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                    </div>
                 </div>
-            </div>
-            <div class="block">
-                <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Social</h5>
-                <div class="grid">
-                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
-                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
-                    <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                <div class="block">
+                    <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Company</h5>
+                    <div class="grid">
+                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                    </div>
                 </div>
-            </div>
+                <div class="block">
+                    <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Social</h5>
+                    <div class="grid">
+                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                    </div>
+                </div>
 
+            </div>
         </div>
-    </div>
+    </footer>
     <!-- Footer End -->
 
 
