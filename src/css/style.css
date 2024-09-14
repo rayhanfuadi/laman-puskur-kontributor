@@ -9,7 +9,7 @@ body {
       -webkit-transition-timing-function: linear !important;
       transition-timing-function: linear !important;
       position: relative;
-      }
-      .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-      background: #4F46E5 !important;
-      }
+}
+.swiper-pagination-bullet {
+      background: #4f46e5;
+}

@@ -3,7 +3,8 @@ module.exports = {
   content: [
     "./src/**/*.{html,js}",
     './pages/**/*.{html,js}',
-    "./node_modules/tw-elements/js/**/*.js"
+    "./node_modules/tw-elements/js/**/*.js",
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
@@ -137,7 +138,10 @@ module.exports = {
        
     },
   },
-  plugins: [require("tw-elements/plugin.cjs")],
+  plugins: [
+    require("tw-elements/plugin.cjs"),
+     require('flowbite/plugin')
+  ],
   darkMode: "class"
 }
 
