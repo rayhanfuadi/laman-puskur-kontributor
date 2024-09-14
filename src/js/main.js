@@ -90,15 +90,3 @@ var swiper3 = new Swiper(".centered-slide-carousel-3", {
 
 
 // Carousel Form Login
-var swiper = new Swiper(".progress-slide-carousel", {
-      loop: true,
-      fraction: true,
-      autoplay: {
-        delay: 3200,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".progress-slide-carousel .swiper-pagination",
-        type: "progressbar",
-      },
-      });
