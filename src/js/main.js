@@ -2,7 +2,7 @@ var swiper = new Swiper(".centered-slide-carousel-1", {
        centeredSlides: true,
        paginationClickable: true,
        loop: true,
-       spaceBetween: 30,
+       spaceBetween: 32,
        slideToClickedSlide: true,
        autoplay: {
        delay: 3100,  // Set waktu otomatis geser ke 3 detik
@@ -15,7 +15,7 @@ var swiper = new Swiper(".centered-slide-carousel-1", {
        breakpoints: {
          1920: {
            slidesPerView: 3,
-           spaceBetween: 24
+           spaceBetween: 32
          },
          1028: {
            slidesPerView: 2,
