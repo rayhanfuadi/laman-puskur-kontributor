@@ -2131,8 +2131,24 @@ input:checked + .toggle-bg {
   background-image: linear-gradient(to right, #6b55ae 0%, #9678f5 100%);
 }
 
+.bg-\[url\(\'\.\.\/src\/img\/bg-pattern\.png\'\)\] {
+  background-image: url('../src/img/bg-pattern.png');
+}
+
+.bg-\[url\(\'\.\.\/src\/img\/content1\.png\'\)\] {
+  background-image: url('../src/img/content1.png');
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-auto {
+  background-size: auto;
 }
 
 .bg-fixed {
@@ -2149,6 +2165,10 @@ input:checked + .toggle-bg {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.bg-repeat-y {
+  background-repeat: repeat-y;
 }
 
 .p-0 {
@@ -2580,6 +2600,11 @@ input:checked + .toggle-bg {
 
 .drop-shadow-drop1 {
   --tw-drop-shadow: drop-shadow(-8px 8px 12px rgb(68 54 110 / 33%));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow-drop2 {
+  --tw-drop-shadow: drop-shadow(0 8px 24px rgb(107 85 174 / 25%));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 

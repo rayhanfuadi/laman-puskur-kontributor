@@ -139,6 +139,7 @@ module.exports = {
 
        dropShadow: {
         'drop1': '-8px 8px 12px theme(colors.violet10 / 33%)',
+        'drop2': '0 8px 24px theme(colors.violet8 / 25%)',
        }
        
     },
