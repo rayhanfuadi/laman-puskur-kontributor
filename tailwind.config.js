@@ -4,8 +4,10 @@ module.exports = {
     "./src/**/*.{html,js}",
     './pages/**/*.{html,js}',
     "./node_modules/tw-elements/js/**/*.js",
-    "./node_modules/flowbite/**/*.js"
+    "./node_modules/flowbite/**/*.js",
+    'index.html'
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors:{
@@ -140,6 +142,7 @@ module.exports = {
        dropShadow: {
         'drop1': '-8px 8px 12px theme(colors.violet10 / 33%)',
         'drop2': '0 8px 24px theme(colors.violet8 / 25%)',
+        'drop3': '0 4px 14px theme(colors.violet8 / 15%)',
        }
        
     },
