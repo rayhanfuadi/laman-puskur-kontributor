@@ -40,8 +40,9 @@
                     Ditanya</a>
             </div>
         </div>
+
+        <!-- login button -->
         <div class="flex gap-[24px]">
-            <img class="block lg:hidden" src="../src/img/hamburger.svg" alt="">
             <a class="hidden lg:block " href="login.html">
                 <button
                     class="px-[20px] py-[10px] border border-violet6 border-[1px] rounded-[10px] text-violet11 text-[20px] hover:bg-gr-violet-86 hover:text-white">Masuk</button>
@@ -52,6 +53,53 @@
                     Akun</button>
             </a>
         </div>
+
+        <!-- Hamburger Button -->
+        <nav class="lg:hidden">
+            <div class="flex items-center">
+                <button type="button" class="flex " id="user-menu-button" aria-expanded="false"
+                    data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+                    <img class="w-[60px] h-[60px] rounded-full" src="../src/img/hamburger.svg" alt="user photo">
+                </button>
+                <!-- Dropdown menu -->
+                <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow"
+                    id="user-dropdown">
+                    <ul class="py-2" aria-labelledby="user-menu-button">
+                        <li>
+                            <a href="#apa"
+                                class="block px-4 py-2 text-[12px] text-violet8 hover:bg-gr-violet-12 hover:text-violet10">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#tatacara"
+                                class="block px-4 py-2 text-[12px] text-violet8 hover:bg-gr-violet-12 hover:text-violet10">Tata
+                                Cara</a>
+                        </li>
+                        <li>
+                            <a href="#seringditanya"
+                                class="block px-4 py-2 text-[12px] text-violet8 hover:bg-gr-violet-12 hover:text-violet10">Sering
+                                Ditanya</a>
+                        </li>
+                        <li>
+                            <a class="block px-4 py-2" href="login.html">
+                                <button
+                                    class="px-[20px] w-full py-[6px] border border-violet6 border-[1px] rounded-[8px] text-violet11 text-[14px] hover:bg-gr-violet-86 hover:text-white">Masuk</button>
+                            </a>
+                        </li>
+                        <li></li>
+                        <a class="block px-4 py-2" href="login.html">
+                            <button
+                                class="px-[20px] w-full text-white py-[6px] bg-gr-violet-86 rounded-[8px] text-violet11 text-[14px] hover:bg-gr-violet-108 hover:text-white">Buat
+                                Akun</button>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Hamburger Button End -->
+
+
+
     </nav>
     <!-- Navbar End -->
 
@@ -513,7 +561,7 @@
     <!-- content 4 End -->
 
     <!-- NavPills Tab -->
-    <div class="px-[16px] lg:px-[160px] pt-[48px] lg:pt-[200px]">
+    <div class="px-[16px] lg:px-[160px] pt-[48px] lg:pt-[200px] mb-[48px] lg:mb-[200px]">
         <!--Tabs navigation-->
         <ul class="mb-5 block lg:flex list-none flex-row flex-wrap" role="tablist" data-twe-nav-ref>
             <li role="presentation" class="flex-auto text-center">
@@ -665,7 +713,7 @@
     <!-- Testimoni -->
     <div class="px-[16px] py-[40px] lg:px-[160px] mb-[48px] lg:mb-[200px] lg:py-[100px] bg-gr-hijau-12">
         <div class="grid gap-[16px] lg:gap-[32px]">
-            <h1 class="text-center font-semibold text-[24px] lg:text-[64px] text-violet11">Testimoni</h1>
+            <h1 class="text-center font-semibold text-[32px] lg:text-[64px] text-violet11">Testimoni</h1>
             <!-- content -->
             <div class="grid gap-[16px] lg:gap-[32px]">
                 <div id="default-carousel" class="relative w-full" data-carousel="slide">
@@ -673,7 +721,7 @@
                     <div class="relative h-[350px] overflow-hidden rounded-lg lg:h-[1000px]">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <p class="text-[20px] lg:text-[42px] text-center mb-[16px] lg:mb-[32px]">1. Lorem ipsum
+                            <p class="text-[24px] lg:text-[42px] text-center mb-[16px] lg:mb-[32px]">1. Lorem ipsum
                                 dolor sit amet,
                                 consectetur
                                 adipiscing
