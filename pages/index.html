@@ -24,7 +24,8 @@
 
 <body class="">
     <!-- Navbar -->
-    <nav class="bg-gr-violet-12 py-[12px] px-[16px] flex justify-between items-center lg:px-[160px] lg:py-[24px]">
+    <nav
+        class="bg-gr-violet-12 absolute top-0 left-0 w-full z-50 sticky py-[12px] px-[16px] flex justify-between items-center lg:px-[160px] lg:py-[24px]">
         <div class="flex items-center gap-[120px]">
             <div class="flex lg:gap-[24px]">
                 <img class="lg:h-[64px] hidden lg:block" src="../src/img/tutwuri-logo.png" alt="">
@@ -62,21 +63,20 @@
                     <img class="w-[60px] h-[60px] rounded-full" src="../src/img/hamburger.svg" alt="user photo">
                 </button>
                 <!-- Dropdown menu -->
-                <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow"
-                    id="user-dropdown">
+                <div class="z-50 w-1/2 hidden my-4 bg-white rounded-lg drop-shadow-drop1 " id="user-dropdown">
                     <ul class="py-2" aria-labelledby="user-menu-button">
                         <li>
                             <a href="#apa"
-                                class="block px-4 py-2 text-[12px] text-violet8 hover:bg-gr-violet-12 hover:text-violet10">Beranda</a>
+                                class="block px-4 py-2 text-[14px] text-violet8 hover:bg-gr-violet-12 hover:text-violet10">Beranda</a>
                         </li>
                         <li>
                             <a href="#tatacara"
-                                class="block px-4 py-2 text-[12px] text-violet8 hover:bg-gr-violet-12 hover:text-violet10">Tata
+                                class="block px-4 py-2 text-[14px] text-violet8 hover:bg-gr-violet-12 hover:text-violet10">Tata
                                 Cara</a>
                         </li>
                         <li>
                             <a href="#seringditanya"
-                                class="block px-4 py-2 text-[12px] text-violet8 hover:bg-gr-violet-12 hover:text-violet10">Sering
+                                class="block px-4 py-2 text-[14px] text-violet8 hover:bg-gr-violet-12 hover:text-violet10">Sering
                                 Ditanya</a>
                         </li>
                         <li>
@@ -270,10 +270,12 @@
                 Kurikulum. Silahkan
                 cermati informasi
                 di halaman berikut sebelum melakukan pendaftaran.</p>
-            <button
-                class="px-4 py-[10px] bg-gr-violet-86 flex items-center gap-2 rounded-xl text-white hover:bg-gr-violet-108 lg:px-[36px] lg:py-[24px] lg:gap-3 lg:text-[20px] lg:rounded-2xl">Daftar
-                Sekarang
-                <img class="w-[16px] lg:w-[24px]" src="../src/img/right-arrow.svg" alt=""></button>
+            <a href="regist.html" class="">
+                <button
+                    class="px-4 py-[10px] bg-gr-violet-86 flex items-center gap-2 rounded-xl text-white hover:bg-gr-violet-108 lg:px-[36px] lg:py-[24px] lg:gap-3 lg:text-[20px] lg:rounded-2xl">Daftar
+                    Sekarang
+                    <img class="w-[16px] lg:w-[24px]" src="../src/img/right-arrow.svg" alt=""></button>
+            </a>
         </div>
     </div>
     <!-- Hero Section End -->
@@ -711,7 +713,7 @@
     <!-- Jadwal Pelaksanaan end -->
 
     <!-- Testimoni -->
-    <div class="px-[16px] py-[40px] lg:px-[160px] mb-[48px] lg:mb-[200px] lg:py-[100px] bg-gr-hijau-12">
+    <div class="px-[16px] py-[40px] lg:px-[160px] lg:py-[100px] bg-gr-hijau-12">
         <div class="grid gap-[16px] lg:gap-[32px]">
             <h1 class="text-center font-semibold text-[32px] lg:text-[64px] text-violet11">Testimoni</h1>
             <!-- content -->
