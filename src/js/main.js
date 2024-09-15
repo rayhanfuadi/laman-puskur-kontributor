@@ -89,4 +89,19 @@ var swiper3 = new Swiper(".centered-slide-carousel-3", {
       });
 
 
-// Carousel Form Login
+// // Hamburger
+// const hamburger = document.querySelector('#hamburger');
+// const navMenu = document.querySelector('#nav-menu');
+
+// hamburger.addEventListener('click', function(){
+//     hamburger.classList.toggle('hamburger-active');
+//     navMenu.classList.toggle('hidden');
+// });
+
+// // klik diluar hamburgernya
+// window.addEventListener('click', function(e){
+//     if(e.target != navMenu && e.target != hamburger){
+//         hamburger.classList.remove('hamburger-active');
+//         navMenu.classList.add('hidden');
+//     }
+// })
