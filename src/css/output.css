@@ -3336,6 +3336,21 @@ input:checked + .toggle-bg {
     padding-bottom: 80px;
   }
 
+  .lg\:py-\[20px\] {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .lg\:px-\[40px\] {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .lg\:px-\[48px\] {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
   .lg\:pt-\[200px\] {
     padding-top: 200px;
   }
@@ -3366,10 +3381,6 @@ input:checked + .toggle-bg {
 
   .lg\:text-\[64px\] {
     font-size: 64px;
-  }
-
-  .lg\:text-\[68px\] {
-    font-size: 68px;
   }
 
   .lg\:leading-\[180\%\] {
