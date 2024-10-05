@@ -14,6 +14,7 @@ var swiper = new Swiper(".centered-slide-carousel-1", {
   },
   breakpoints: {
     1920: {
+
       slidesPerView: 4,
       spaceBetween: 32
     },
@@ -29,7 +30,7 @@ var swiper = new Swiper(".centered-slide-carousel-1", {
 });
 
 var swiper2 = new Swiper(".centered-slide-carousel-2", {
-  centeredSlides: true,
+  centeredSlides: false,
   paginationClickable: true,
   loop: true,
   spaceBetween: 30,
