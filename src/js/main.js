@@ -19,7 +19,7 @@ var swiper = new Swiper(".centered-slide-carousel-1", {
       spaceBetween: 32
     },
     1028: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 16
     },
     240: {
@@ -49,7 +49,7 @@ var swiper2 = new Swiper(".centered-slide-carousel-2", {
       spaceBetween: 24
     },
     1028: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 16
     },
     240: {
@@ -79,7 +79,7 @@ var swiper3 = new Swiper(".centered-slide-carousel-3", {
       spaceBetween: 24
     },
     1028: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 16
     },
     240: {
@@ -88,6 +88,21 @@ var swiper3 = new Swiper(".centered-slide-carousel-3", {
     }
   }
 });
+
+
+// Testimoni (Pagedone)
+var swiper = new Swiper(".default-carousel", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 
 // navHeader scrool
 window.onscroll = function () {

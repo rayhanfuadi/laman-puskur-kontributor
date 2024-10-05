@@ -10,6 +10,13 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
       colors: {
         // biru
         biru1: '#d2e0f0',
@@ -144,7 +151,6 @@ module.exports = {
         'drop2': '0 8px 24px theme(colors.violet8 / 25%)',
         'drop3': '0 4px 14px theme(colors.violet8 / 15%)',
       }
-
     },
   },
   plugins: [
