@@ -24,13 +24,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
 
-<body class="w-full h-full bg-center bg-auto bg-repeat-y" style="background-image: url(../src/img/bg-pattern.png);">
-    <div class="flex justify-center items-center px-[16px] lg:px-[250px] py-[100px]">
+<body class="w-full h-full bg-center bg-auto bg-repeat-y" style="background-image: url(../src/img/bg-pattern.jpg);">
+    <div class="flex justify-center items-center px-[16px] lg:px-[150px] py-[100px]">
         <div
             class="w-full block lg:flex items-center bg-white rounded-[16px] lg:rounded-[32px] p-[24px] gap-[32px] drop-shadow-drop2">
-            <!-- kanan -->
-            <div
-                class="w-full relative m-p p-0 bg-gr-violet-86 rounded-[12px] lg:rounded-[24px] mb-[32px] lg:mb-0 lg:order-last">
+            <!-- kiri -->
+            <div class="w-full relative m-p p-0 bg-gr-violet-86 rounded-[12px] lg:rounded-[24px] mb-[32px] lg:mb-0">
                 <div id="default-carousel" class="relative w-full" data-carousel="slide">
                     <!-- Carousel wrapper -->
                     <div class="relative h-[400px] overflow-hidden rounded-lg lg:!h-[900px]">
@@ -38,7 +37,7 @@
                         <div class="hidden flex flex-col justify-center duration-700 ease-in-out px-[16px] lg:px-[32px]"
                             data-carousel-item>
                             <div class="grid gap-[32px] lg:gap-[64px]">
-                                <img class="" src="../src/img/content1.png" alt="...">
+                                <img class="rounded-[24px]" src="../src/img/content1.jpg" alt="...">
                                 <div class="grid gap-[12px] lg:gap-[24px] px-[16px] lg:px-[32px]">
                                     <h4 class="text-white text-center text-[16px] lg:text-[32px]">Apa itu Kontributor?
                                     </h4>
@@ -53,7 +52,7 @@
                         <div class="hidden flex flex-col justify-center duration-700 ease-in-out px-[16px] lg:px-[32px]"
                             data-carousel-item>
                             <div class="grid gap-[32px] lg:gap-[64px]">
-                                <img class="" src="../src/img/content2.png" alt="...">
+                                <img class="rounded-[24px]" src="../src/img/content2.jpg" alt="...">
                                 <div class="grid gap-[12px] lg:gap-[24px] px-[16px] lg:px-[32px]">
                                     <h4 class="text-white text-center text-[16px] lg:text-[32px]">Kenapa itu
                                         Kontributor?
@@ -69,7 +68,7 @@
                         <div class="hidden flex flex-col justify-center duration-700 ease-in-out px-[16px] lg:px-[32px]"
                             data-carousel-item>
                             <div class="grid gap-[32px] lg:gap-[64px]">
-                                <img class="" src="../src/img/content3.png" alt="...">
+                                <img class="rounded-[24px]" src="../src/img/content3.jpg" alt="...">
                                 <div class="grid gap-[12px] lg:gap-[24px] px-[16px] lg:px-[32px]">
                                     <h4 class="text-white text-center text-[16px] lg:text-[32px]">Siapa itu Kontributor?
                                     </h4>
@@ -119,12 +118,12 @@
                     </button>
                 </div>
             </div>
-            <!-- kanan end -->
+            <!-- kiri end -->
 
-            <!-- kiri -->
-            <div class="w-full relative grid gap-[16px] lg:gap-[32px] px-[16px] lg:px-[24px]">
+            <!-- kanan -->
+            <div class="w-full relative flex flex-col gap-[16px] lg:gap-[32px] px-[16px] lg:px-[24px]">
                 <img class="w-[150px] lg:w-[250px]" src="../src/img/logo-puskurjar-text.svg" alt="">
-                <div class="grid gap-1 lg:gap-2">
+                <div class="flex flex-col gap-1 lg:gap-2">
                     <h2 class="text-[20px] font-semibold text-violet11 lg:text-[32px]">Registrasi Akun</h2>
                     <p class="text-[14px] text-biruLaut9 lg:text-[16px]">Aplikasi Kontributor merupakan aplikasi induk
                         dalam manajemen
@@ -133,14 +132,14 @@
                         keberlanjutn</p>
                 </div>
                 <!-- input nama password -->
-                <div class="grid gap-[12px] lg:gap-[18px]">
+                <div class="flex flex-col gap-[12px] lg:gap-[18px]">
                     <div class="grid gap-[6px] lg:gap-[10px]">
                         <p class="font-semibold text-[14px] lg:text-[16px] text-violet11">Nama Pengguna *</p>
                         <div
                             class="flex items-center justify-between px-[16px] py-[8px] lg:px-[24px] lg:py-[16px] border border-1 border-biruLaut7 rounded-[10px]">
                             <img class="w-[18px] lg:w-[24px]" src="../src/img/icon/user.svg" alt="">
-                            <input class="w-full border border-none focus:ring-0 text-violet11" type="text"
-                                placeholder="Masukkan Nama Pengguna">
+                            <input class="w-full bg-transparent border border-none focus:ring-0 text-violet11"
+                                type="text" placeholder="Masukkan Nama Pengguna">
                         </div>
                     </div>
                     <div class="grid gap-[6px] lg:gap-[10px]">
@@ -148,8 +147,8 @@
                         <div
                             class="flex items-center justify-between px-[16px] py-[8px] lg:px-[24px] lg:py-[16px] border border-1 border-biruLaut7 rounded-[10px]">
                             <img class="w-[18px] lg:w-[24px]" src="../src/img/icon/user.svg" alt="">
-                            <input class="w-full border border-none focus:ring-0 text-violet11" type="text"
-                                placeholder="Masukkan Nama Pengguna">
+                            <input class="w-full bg-transparent border border-none focus:ring-0 text-violet11"
+                                type="text" placeholder="Masukkan Nama Pengguna">
                         </div>
                     </div>
                     <div class="grid gap-[6px] lg:gap-[10px]">
@@ -158,18 +157,20 @@
                             class="flex items-center justify-between px-[16px] py-[8px] lg:px-[24px] lg:py-[16px] border border-1 border-biruLaut7 rounded-[10px]">
                             <div class="flex w-full items-center gap-[2px] lg:gap-[6px]">
                                 <img class="w-[18px] lg:w-[24px]" src="../src/img/icon/password.svg" alt="">
-                                <input class="w-full border border-none focus:ring-0 text-violet11" type="password"
-                                    placeholder="Masukkan Nama Pengguna">
+                                <input class="w-full bg-transparent border border-none focus:ring-0 text-violet11"
+                                    type="password" placeholder="Masukkan Nama Pengguna">
                             </div>
-                            <a href="" class="">
-                                <img src="../src/img/icon/eye-password.svg" alt="">
-                            </a>
+                            <div class="">
+                                <a href="" class="">
+                                    <img src="../src/img/icon/eye-password.svg" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Captcha checkbox -->
                     <div
-                        class="flex justify-between items-center w-[350px] p-[12px] lg:p-[16px] border border-1 border-[#ababab] rounded-[10px]">
+                        class="flex w-full justify-between items-center w-[350px] p-[12px] lg:p-[16px] border border-1 border-[#ababab] rounded-[10px]">
                         <div class="flex items-center gap-[8px] lg:gap-[16px]">
                             <input class="" type="checkbox" name="" id="">
                             <p class="text-[12px] lg:text-[16px]">I'm not a robot</p>
@@ -196,7 +197,7 @@
                 </div>
                 <!-- input nama password end -->
             </div>
-            <!-- kiri end -->
+            <!-- kanan end -->
         </div>
     </div>
 

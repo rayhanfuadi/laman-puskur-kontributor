@@ -93,6 +93,10 @@ var swiper3 = new Swiper(".centered-slide-carousel-3", {
 // Testimoni (Pagedone)
 var swiper = new Swiper(".default-carousel", {
   loop: true,
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: true,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
