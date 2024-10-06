@@ -10,7 +10,14 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      colors:{
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
+      colors: {
         // biru
         biru1: '#d2e0f0',
         biru2: '#b3cbe6',
@@ -95,61 +102,60 @@ module.exports = {
         violet9: '#56448c',
         violet10: '#44366e',
         violet11: '#2F2352',
-       },
-       
-       backgroundImage: {
-         // biru
-         'gr-biru-86': 'linear-gradient(to right, theme(colors.biru8) 0%, theme(colors.biru6) 100%)',
-         'gr-biru-108': 'linear-gradient(to right, theme(colors.biru10) 0%, theme(colors.biru8) 100%)',
-         'gr-biru-12': 'linear-gradient(to right, theme(colors.biru1) 0%, theme(colors.biru2) 100%)',
-         
-         // biruLangit
-         'gr-biruLangit-86': 'linear-gradient(to right, theme(colors.biruLangit8) 0%, theme(colors.biruLangit6) 100%)',
-         'gr-biruLangit-108': 'linear-gradient(to right, theme(colors.biruLangit10) 0%, theme(colors.biruLangit8) 100%)',
-         'gr-biruLangit-12': 'linear-gradient(to right, theme(colors.biruLangit1) 0%, theme(colors.biruLangit2) 100%)',
-         
-         // biruTua
-         'gr-biruTua-86': 'linear-gradient(to right, theme(colors.biruTua8) 0%, theme(colors.biruTua6) 100%)',
-         'gr-biruTua-108': 'linear-gradient(to right, theme(colors.biruTua10) 0%, theme(colors.biruTua8) 100%)',
-         'gr-biruTua-12': 'linear-gradient(to right, theme(colors.biruTua1) 0%, theme(colors.biruTua2) 100%)',
-         
-         // biruLaut
-         'gr-biruLaut-86': 'linear-gradient(to right, theme(colors.biruLaut8) 0%, theme(colors.biruLaut6) 100%)',
-         'gr-biruLaut-108': 'linear-gradient(to right, theme(colors.biruLaut10) 0%, theme(colors.biruLaut8) 100%)',
-         'gr-biruLaut-12': 'linear-gradient(to right, theme(colors.biruLaut1) 0%, theme(colors.biruLaut2) 100%)',
-         
-         // hijau
-         'gr-hijau-86': 'linear-gradient(to right, theme(colors.hijau8) 0%, theme(colors.hijau6) 100%)',
-         'gr-hijau-108': 'linear-gradient(to right, theme(colors.hijau10) 0%, theme(colors.hijau8) 100%)',
-         'gr-hijau-12': 'linear-gradient(to right, theme(colors.hijau1) 0%, theme(colors.hijau2) 100%)',
-         
-         // kuning
-         'gr-kuning-86': 'linear-gradient(to right, theme(colors.kuning8) 0%, theme(colors.kuning6) 100%)',
-         'gr-kuning-108': 'linear-gradient(to right, theme(colors.kuning10) 0%, theme(colors.kuning8) 100%)',
-         'gr-kuning-12': 'linear-gradient(to right, theme(colors.kuning1) 0%, theme(colors.kuning2) 100%)',
+      },
 
-         // violet
-         'gr-violet-86': 'linear-gradient(to right, theme(colors.violet8) 0%, theme(colors.violet6) 100%)',
-         'gr-violet-108': 'linear-gradient(to right, theme(colors.violet10) 0%, theme(colors.violet8) 100%)',
-         'gr-violet-12': 'linear-gradient(to right, theme(colors.violet1) 0%, theme(colors.violet2) 100%)',
-       },
+      backgroundImage: {
+        // biru
+        'gr-biru-86': 'linear-gradient(to right, theme(colors.biru8) 0%, theme(colors.biru6) 100%)',
+        'gr-biru-108': 'linear-gradient(to right, theme(colors.biru10) 0%, theme(colors.biru8) 100%)',
+        'gr-biru-12': 'linear-gradient(to right, theme(colors.biru1) 0%, theme(colors.biru2) 100%)',
 
-       boxShadow: {
+        // biruLangit
+        'gr-biruLangit-86': 'linear-gradient(to right, theme(colors.biruLangit8) 0%, theme(colors.biruLangit6) 100%)',
+        'gr-biruLangit-108': 'linear-gradient(to right, theme(colors.biruLangit10) 0%, theme(colors.biruLangit8) 100%)',
+        'gr-biruLangit-12': 'linear-gradient(to right, theme(colors.biruLangit1) 0%, theme(colors.biruLangit2) 100%)',
+
+        // biruTua
+        'gr-biruTua-86': 'linear-gradient(to right, theme(colors.biruTua8) 0%, theme(colors.biruTua6) 100%)',
+        'gr-biruTua-108': 'linear-gradient(to right, theme(colors.biruTua10) 0%, theme(colors.biruTua8) 100%)',
+        'gr-biruTua-12': 'linear-gradient(to right, theme(colors.biruTua1) 0%, theme(colors.biruTua2) 100%)',
+
+        // biruLaut
+        'gr-biruLaut-86': 'linear-gradient(to right, theme(colors.biruLaut8) 0%, theme(colors.biruLaut6) 100%)',
+        'gr-biruLaut-108': 'linear-gradient(to right, theme(colors.biruLaut10) 0%, theme(colors.biruLaut8) 100%)',
+        'gr-biruLaut-12': 'linear-gradient(to right, theme(colors.biruLaut1) 0%, theme(colors.biruLaut2) 100%)',
+
+        // hijau
+        'gr-hijau-86': 'linear-gradient(to right, theme(colors.hijau8) 0%, theme(colors.hijau6) 100%)',
+        'gr-hijau-108': 'linear-gradient(to right, theme(colors.hijau10) 0%, theme(colors.hijau8) 100%)',
+        'gr-hijau-12': 'linear-gradient(to right, theme(colors.hijau1) 0%, theme(colors.hijau2) 100%)',
+
+        // kuning
+        'gr-kuning-86': 'linear-gradient(to right, theme(colors.kuning8) 0%, theme(colors.kuning6) 100%)',
+        'gr-kuning-108': 'linear-gradient(to right, theme(colors.kuning10) 0%, theme(colors.kuning8) 100%)',
+        'gr-kuning-12': 'linear-gradient(to right, theme(colors.kuning1) 0%, theme(colors.kuning2) 100%)',
+
+        // violet
+        'gr-violet-86': 'linear-gradient(to right, theme(colors.violet8) 0%, theme(colors.violet6) 100%)',
+        'gr-violet-108': 'linear-gradient(to right, theme(colors.violet10) 0%, theme(colors.violet8) 100%)',
+        'gr-violet-12': 'linear-gradient(to right, theme(colors.violet1) 0%, theme(colors.violet2) 100%)',
+      },
+
+      boxShadow: {
         'box1': '0 12px 24px 0 theme(colors.violet8 / 25%)',
         'box2': '0 12px 24px 0 theme(colors.violet10 / 25%)',
-       },
+      },
 
-       dropShadow: {
+      dropShadow: {
         'drop1': '-8px 8px 12px theme(colors.violet10 / 33%)',
         'drop2': '0 8px 24px theme(colors.violet8 / 25%)',
         'drop3': '0 4px 14px theme(colors.violet8 / 15%)',
-       }
-       
+      }
     },
   },
   plugins: [
     require("tw-elements/plugin.cjs"),
-     require('flowbite/plugin')
+    require('flowbite/plugin')
   ],
   darkMode: "class"
 }
