@@ -16,7 +16,7 @@ var swiper = new Swiper(".centered-slide-carousel-1", {
     1920: {
 
       slidesPerView: 4,
-      spaceBetween: 32
+      spaceBetween: 16
     },
     1028: {
       slidesPerView: 3,
@@ -46,7 +46,7 @@ var swiper2 = new Swiper(".centered-slide-carousel-2", {
   breakpoints: {
     1920: {
       slidesPerView: 4,
-      spaceBetween: 24
+      spaceBetween: 16
     },
     1028: {
       slidesPerView: 3,
@@ -76,7 +76,7 @@ var swiper3 = new Swiper(".centered-slide-carousel-3", {
   breakpoints: {
     1920: {
       slidesPerView: 4,
-      spaceBetween: 24
+      spaceBetween: 16
     },
     1028: {
       slidesPerView: 3,
@@ -117,3 +117,17 @@ window.onscroll = function () {
     navbar.classList.remove('drop-shadow-drop3');
   }
 };
+
+//button masuk
+const loginBtn = document.getElementById('loginBtn');
+
+loginBtn.addEventListener("click", () => {
+  console.log("masuk")
+  window.location.href = "./login.html"
+})
+
+const registBtn = document.getElementById('registBtn');
+
+registBtn.addEventListener("click", () => {
+  window.location.href = "./regist.html"
+})
