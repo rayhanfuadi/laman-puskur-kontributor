@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../src/css/style.css">
 
     <!-- Pagedone CSS -->
+    <link href="../path/to/src/pagedone.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css " rel="stylesheet" />
 
@@ -43,21 +44,20 @@
 
         <!-- login button -->
         <div class="flex gap-[24px]">
-            <a class="hidden lg:block " href="login.html">
-                <button
-                    class="px-[20px] py-[10px] border border-violet6 border-[1px] rounded-[10px] text-violet11 text-[20px] hover:bg-gr-violet-86 hover:text-white">Masuk</button>
-            </a>
-            <a class="hidden lg:block " href="./regist.html">
-                <button
-                    class="px-[20px] py-[10px] bg-gr-violet-86 text-white rounded-[10px] text-violet11 text-[20px] hover:bg-gr-violet-108 hover:text-white">Buat
-                    Akun</button>
-            </a>
+            <button type="button"
+                class=" hidden lg:block px-[20px] py-[10px] border border-violet6 border-[1px] rounded-[10px] text-violet11 text-[20px] hover:bg-gr-violet-86 hover:text-white"
+                data-twe-toggle="modal" data-twe-target="#exampleModal" data-twe-ripple-init
+                data-twe-ripple-color="light">Masuk</button>
+
+            <button
+                class="hidden lg:block px-[20px] py-[10px] bg-gr-violet-86 text-white rounded-[10px] text-violet11 text-[20px] hover:bg-gr-violet-108 hover:text-white">Buat
+                Akun</button>
         </div>
 
         <!-- Hamburger Button -->
         <nav class="lg:hidden">
             <div class="flex items-center">
-                <button type="button" class="flex " id="user-menu-button" aria-expanded="false"
+                <button type="button" class="flex" id="user-menu-button" aria-expanded="false"
                     data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
                     <img class="w-[60px] h-[60px] rounded-full" src="../src/img/hamburger.svg" alt="user photo">
                 </button>
@@ -99,6 +99,56 @@
 
     </nav>
     <!-- Navbar End -->
+
+    <!-- Modal Start TW Element -->
+    <!-- Modal -->
+    <div data-twe-modal-init
+        class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+        id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div data-twe-modal-dialog-ref
+            class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
+            <div
+                class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark">
+                <div
+                    class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 p-4 dark:border-white/10">
+                    <h5 class="text-xl font-medium leading-normal text-surface dark:text-white" id="exampleModalLabel">
+                        Modal title
+                    </h5>
+                    <button type="button"
+                        class="box-content rounded-none border-none text-neutral-500 hover:text-neutral-800 hover:no-underline focus:text-neutral-800 focus:opacity-100 focus:shadow-none focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+                        data-twe-modal-dismiss aria-label="Close">
+                        <span class="[&>svg]:h-6 [&>svg]:w-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="relative flex-auto p-4" data-twe-modal-body-ref>
+                    Modal body text goes here.
+                </div>
+
+                <!-- Modal footer -->
+                <div
+                    class="flex flex-shrink-0 flex-wrap gap-x-2 items-center justify-end rounded-b-md border-t-2 border-neutral-100 p-4 dark:border-white/10">
+                    <button
+                        class="inline-block rounded-full bg-violet1 px-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-violet10 transition duration-150 ease-in-out hover:bg-violet2"
+                        data-twe-modal-dismiss data-twe-ripple-init data-twe-ripple-color="light">
+                        Cancel
+                    </button>
+                    <button id="loginBtn"
+                        class="ms-1 inline-block rounded-full bg-gr-violet-86 px-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-white transition duration-150 ease-in-out hover:bg-gr-biru-108"
+                        data-twe-ripple-init data-twe-ripple-color="light">
+                        Okay, Got it
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
 
     <!-- Hero Section -->
     <div class="px-[16px] py-[16px] lg:grid lg:grid-cols-2 lg:gap-[32px] lg:px-[160px] lg:py-[80px]">
@@ -838,16 +888,16 @@
                 </p>
                 <div class="flex gap-[32px] mb-4 lg:mb-[64px]">
                     <a href="#">
-                        <img src="../src/img/icon/x.svg" alt="">
+                        <img class="opacity-50 hover:opacity-100" src="../src/img/icon/x.svg" alt="">
                     </a>
                     <a href="#">
-                        <img src="../src/img/icon/ig.svg" alt="">
+                        <img class="opacity-50 hover:opacity-100" src="../src/img/icon/ig.svg" alt="">
                     </a>
                     <a href="#">
-                        <img src="../src/img/icon/fb.svg" alt="">
+                        <img class="opacity-50 hover:opacity-100" src="../src/img/icon/fb.svg" alt="">
                     </a>
                     <a href="#">
-                        <img src="../src/img/icon/thread.svg" alt="">
+                        <img class="opacity-50 hover:opacity-100" src="../src/img/icon/thread.svg" alt="">
                     </a>
                 </div>
                 <p class="text-white mb-4">Hak Cipta &copy; 2024 Pusat Kurikulum dan Pembelajaran
@@ -857,25 +907,34 @@
                 <div class="block">
                     <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Product</h5>
                     <div class="grid">
-                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
-                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
-                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                            Ipsum</a>
+                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                            Ipsum</a>
+                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                            Ipsum</a>
                     </div>
                 </div>
                 <div class="block">
                     <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Company</h5>
                     <div class="grid">
-                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
-                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
-                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                            Ipsum</a>
+                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                            Ipsum</a>
+                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                            Ipsum</a>
                     </div>
                 </div>
                 <div class="block">
                     <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Social</h5>
                     <div class="grid">
-                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
-                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
-                        <a class="mb-[6px] lg:mb-[10px]" href="#">Lorem Ipsum</a>
+                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                            Ipsum</a>
+                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                            Ipsum</a>
+                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                            Ipsum</a>
                     </div>
                 </div>
 
@@ -885,6 +944,7 @@
     <!-- Footer End -->
 
     <!-- Pagedone Javascript -->
+    <script src="../path/to/src/pagedone.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
 
