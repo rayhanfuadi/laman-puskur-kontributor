@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../src/css/input.css">
     <link rel="stylesheet" href="../src/css/style.css">
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- Pagedone CSS -->
     <link href="../path/to/src/pagedone.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
@@ -20,383 +23,784 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Animate JS -->
 </head>
 
 <body class="">
     <!-- Navbar -->
-    <nav id="navbar"
-        class="bg-white absolute top-0 left-0 w-full z-50 sticky py-[12px] px-[16px] flex justify-between items-center lg:px-[160px] lg:py-[24px]">
-        <div class="flex items-center gap-[120px]">
-            <div class="flex lg:gap-[24px]">
-                <img class="lg:h-[64px] hidden lg:block" src="../src/img/tutwuri-logo.png" alt="">
-                <img class="lg:h-[64px]" src="../src/img/logo-puskurjar-text.svg" alt="">
-            </div>
-            <div class="hidden gap-[28px] lg:flex">
-                <a class="text-[16px] text-violet8 lg:text-[20px] hover:text-violet10 duration-3000 ease-in-out"
-                    href="#apa">Beranda</a>
-                <a class="text-[16px] text-violet8 lg:text-[20px] hover:text-violet10 duration-3000 ease-in-out"
-                    href="#tatacara">Tata Cara</a>
-                <a class="text-[16px] text-violet8 lg:text-[20px] hover:text-violet10 duration-3000 ease-in-out"
-                    href="#seringditanya">Sering
-                    Ditanya</a>
-            </div>
-        </div>
-
-        <!-- login button -->
-        <div class="flex gap-[24px]">
-            <button type="button"
-                class=" hidden lg:block px-[20px] py-[10px] border border-violet6 border-[1px] rounded-[10px] text-violet11 text-[20px] hover:bg-gr-violet-86 hover:text-white"
-                data-twe-toggle="modal" data-twe-target="#exampleModal" data-twe-ripple-init
-                data-twe-ripple-color="light">Masuk</button>
-
-            <button
-                class="hidden lg:block px-[20px] py-[10px] bg-gr-violet-86 text-white rounded-[10px] text-violet11 text-[20px] hover:bg-gr-violet-108 hover:text-white">Buat
-                Akun</button>
-        </div>
-
-        <!-- Hamburger Button -->
-        <nav class="lg:hidden">
-            <div class="flex items-center">
-                <button type="button" class="flex" id="user-menu-button" aria-expanded="false"
-                    data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
-                    <img class="w-[60px] h-[60px] rounded-full" src="../src/img/hamburger.svg" alt="user photo">
-                </button>
-                <!-- Dropdown menu -->
-                <div class="z-50 w-1/2 hidden my-4 bg-white rounded-lg drop-shadow-drop1 " id="user-dropdown">
-                    <ul class="py-2" aria-labelledby="user-menu-button">
-                        <li>
-                            <a href="#apa"
-                                class="block px-4 py-2 text-[14px] text-violet8 hover:bg-gr-violet-12 hover:text-violet10">Beranda</a>
-                        </li>
-                        <li>
-                            <a href="#tatacara"
-                                class="block px-4 py-2 text-[14px] text-violet8 hover:bg-gr-violet-12 hover:text-violet10">Tata
-                                Cara</a>
-                        </li>
-                        <li>
-                            <a href="#seringditanya"
-                                class="block px-4 py-2 text-[14px] text-violet8 hover:bg-gr-violet-12 hover:text-violet10">Sering
-                                Ditanya</a>
-                        </li>
-                        <li>
-                            <a class="block px-4 py-2" href="login.html">
-                                <button
-                                    class="px-[20px] w-full py-[6px] border border-violet6 border-[1px] rounded-[8px] text-violet11 text-[14px] hover:bg-gr-violet-86 hover:text-white">Masuk</button>
-                            </a>
-                        </li>
-                        <li></li>
-                        <a class="block px-4 py-2" href="login.html">
-                            <button
-                                class="px-[20px] w-full text-white py-[6px] bg-gr-violet-86 rounded-[8px] text-violet11 text-[14px] hover:bg-gr-violet-108 hover:text-white">Buat
-                                Akun</button>
-                        </a>
-                        </li>
-                    </ul>
+    <header class=" top-0 w-full h-auto sticky z-10">
+        <nav id="navbar" class="bg-white py-[12px] flex justify-between items-center lg:py-[20px]">
+            <div class="md:container lg:container px-[16px] w-full flex justify-between">
+                <div class="flex items-center gap-[60px]">
+                    <div class="flex lg:gap-[12px] cursor-pointer">
+                        <img class="lg:h-[42px] hidden lg:block" src="../src/img/tutwuri-logo.png" alt="">
+                        <img class="lg:h-[42px]" src="../src/img/logo-puskurjar-text.svg" alt="">
+                    </div>
+                    <div class="hidden gap-[28px] lg:flex">
+                        <a class="text-[16px] text-violet8 hover:text-violet11 transition duration-300 ease-in-out"
+                            href="#apa">Beranda</a>
+                        <a class="text-[16px] text-violet8 hover:text-violet11 transition duration-300 ease-in-out"
+                            href="#tatacara">Tata
+                            Cara</a>
+                        <a class="text-[16px] text-violet8 hover:text-violet11 transition duration-300 ease-in-out"
+                            href="#seringditanya">Sering
+                            Ditanya</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <!-- Hamburger Button End -->
 
-    </nav>
+                <!-- login button -->
+                <div class="flex gap-[12px]">
+                    <button
+                        class=" hidden lg:block px-[20px] py-[8px] text-violet11 transition duration-500 ease-in-out border border-violet6 rounded-[10px] text-[16px] hover:bg-gr-violet-86 hover:text-white"
+                        data-twe-toggle="modal" data-twe-target="#exampleModalLogin" data-twe-ripple-init
+                        data-twe-ripple-color="light">Masuk</button>
+
+                    <button id="registBtn" class="hidden lg:block px-[20px] py-[8px] bg-gr-violet-86 text-white rounded-[10px] transform
+                    transition duration-1000 ease-in-out text-[16px] hover:bg-gr-violet-108
+                    hover:text-white" data-twe-toggle="modal" data-twe-target="#exampleModalRegist"
+                        data-twe-ripple-init data-twe-ripple-color="light">Buat
+                        Akun</button>
+                </div>
+
+                <!-- Hamburger Button -->
+                <nav class="lg:hidden">
+                    <div class="flex items-center">
+                        <button type="button" class="flex" id="user-menu-button" aria-expanded="false"
+                            data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+                            <img class="w-[60px] h-[60px] rounded-full" src="../src/img/hamburger.svg" alt="user photo">
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="z-50 w-1/2 hidden my-4 bg-white rounded-lg drop-shadow-drop1 " id="user-dropdown">
+                            <ul class="py-2" aria-labelledby="user-menu-button">
+                                <li>
+                                    <a href="#apa"
+                                        class="block px-4 py-2 text-[14px] text-violet8 hover:bg-gr-violet-12 hover:text-violet10">Beranda</a>
+                                </li>
+                                <li>
+                                    <a href="#tatacara"
+                                        class="block px-4 py-2 text-[14px] text-violet8 hover:bg-gr-violet-12 hover:text-violet10">Tata
+                                        Cara</a>
+                                </li>
+                                <li>
+                                    <a href="#seringditanya"
+                                        class="block px-4 py-2 text-[14px] text-violet8 hover:bg-gr-violet-12 hover:text-violet10">Sering
+                                        Ditanya</a>
+                                </li>
+                                <li>
+                                    <a class="block px-4 py-2" href="login.html">
+                                        <button
+                                            class="px-[20px] w-full py-[6px] border border-violet6 rounded-[8px] text-violet11 text-[14px] hover:bg-gr-violet-86 hover:text-white">Masuk</button>
+                                    </a>
+                                </li>
+                                <li></li>
+                                <a class="block px-4 py-2" href="login.html">
+                                    <button
+                                        class="px-[20px] w-full text-white py-[6px] bg-gr-violet-86 rounded-[8px] text-[14px] hover:bg-gr-violet-108 hover:text-white">Buat
+                                        Akun</button>
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Hamburger Button End -->
+            </div>
+
+        </nav>
+    </header>
     <!-- Navbar End -->
 
-    <!-- Modal Start TW Element -->
-    <!-- Modal -->
+    <!-- Modal Login Start TW Element -->
     <div data-twe-modal-init
         class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-        id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div data-twe-modal-dialog-ref
-            class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
+            class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out md:container lg:container px-[20px]">
             <div
-                class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark">
-                <div
-                    class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 p-4 dark:border-white/10">
-                    <h5 class="text-xl font-medium leading-normal text-surface dark:text-white" id="exampleModalLabel">
-                        Modal title
-                    </h5>
-                    <button type="button"
-                        class="box-content rounded-none border-none text-neutral-500 hover:text-neutral-800 hover:no-underline focus:text-neutral-800 focus:opacity-100 focus:shadow-none focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300"
-                        data-twe-modal-dismiss aria-label="Close">
-                        <span class="[&>svg]:h-6 [&>svg]:w-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </span>
-                    </button>
-                </div>
+                class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-transparent bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark">
+                <!-- isi Modal Login -->
+                <div class="">
+                    <div class="flex justify-center items-center py-[30px] ">
+                        <div
+                            class="w-full block lg:flex items-center bg-white rounded-[16px] lg:rounded-[32px] p-[24px] gap-[32px] drop-shadow-drop2">
+                            <!-- kanan -->
+                            <div
+                                class="w-full rvelative m-p p-0 bg-gr-violet-86 rounded-[12px] lg:rounded-[24px] mb-[32px] lg:mb-0 lg:order-last">
+                                <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                                    <!-- Carousel wrapper -->
+                                    <div class="relative h-[400px] overflow-hidden rounded-lg lg:!h-[900px]">
+                                        <!-- Item 1 -->
+                                        <div class="flex flex-col justify-center duration-700 ease-in-out px-[16px] lg:px-[32px]"
+                                            data-carousel-item>
+                                            <div class="grid gap-[32px] lg:gap-[64px]">
+                                                <img class="rounded-[24px]" src="../src/img/content1.jpg" alt="...">
+                                                <div class="grid gap-[12px] lg:gap-[24px] px-[16px] lg:px-[32px]">
+                                                    <h4 class="text-white text-center text-[16px] lg:text-[32px]">Apa
+                                                        itu
+                                                        Kontributor?
+                                                    </h4>
+                                                    <p class="text-white text-center text-[12px] lg:text-[20px]">Lorem
+                                                        ipsum dolor
+                                                        sit
+                                                        amet,
+                                                        consectetur
+                                                        adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div class="flex flex-col justify-center duration-700 ease-in-out px-[16px] lg:px-[32px]"
+                                            data-carousel-item>
+                                            <div class="grid gap-[32px] lg:gap-[64px]">
+                                                <img class="rounded-[24px]" src="../src/img/content2.jpg" alt="...">
+                                                <div class="grid gap-[12px] lg:gap-[24px] px-[16px] lg:px-[32px]">
+                                                    <h4 class="text-white text-center text-[16px] lg:text-[32px]">Kenapa
+                                                        itu
+                                                        Kontributor?
+                                                    </h4>
+                                                    <p class="text-white text-center text-[12px] lg:text-[20px]">Lorem
+                                                        ipsum dolor
+                                                        sit
+                                                        amet,
+                                                        consectetur
+                                                        adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Item 3 -->
+                                        <div class="flex flex-col justify-center duration-700 ease-in-out px-[16px] lg:px-[32px]"
+                                            data-carousel-item>
+                                            <div class="grid gap-[32px] lg:gap-[64px]">
+                                                <img class="rounded-[24px]" src="../src/img/content3.jpg" alt="...">
+                                                <div class="grid gap-[12px] lg:gap-[24px] px-[16px] lg:px-[32px]">
+                                                    <h4 class="text-white text-center text-[16px] lg:text-[32px]">Siapa
+                                                        itu
+                                                        Kontributor?
+                                                    </h4>
+                                                    <p class="text-white text-center text-[12px] lg:text-[20px]">Lorem
+                                                        ipsum dolor
+                                                        sit
+                                                        amet,
+                                                        consectetur
+                                                        adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slider indicators -->
+                                    <div
+                                        class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true"
+                                            aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
+                                            aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
+                                            aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                                    </div>
+                                    <!-- Slider controls -->
+                                    <button type="button"
+                                        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                        data-carousel-prev>
+                                        <span
+                                            class="inline-flex items-center justify-center w-[30px] h-[30px] lg:!w-[60px] lg:h-[60px] rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-1 group-focus:ring-white dark:group-focus:ring-white-800/70 group-focus:outline-none">
+                                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 6 10">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="1" d="M5 1 1 5l4 4" />
+                                            </svg>
+                                            <span class="sr-only">Previous</span>
+                                        </span>
+                                    </button>
+                                    <button type="button"
+                                        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                        data-carousel-next>
+                                        <span
+                                            class="inline-flex items-center justify-center w-[30px] h-[30px] lg:!w-[60px] lg:h-[60px] rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-1 group-focus:ring-white dark:group-focus:ring-white-800/70 group-focus:outline-none">
+                                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 6 10">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="1" d="m1 9 4-4-4-4" />
+                                            </svg>
+                                            <span class="sr-only">Next</span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- kanan end -->
 
-                <!-- Modal body -->
-                <div class="relative flex-auto p-4" data-twe-modal-body-ref>
-                    Modal body text goes here.
-                </div>
+                            <!-- kiri -->
+                            <div class="w-full relative grid gap-[16px] lg:gap-[32px] px-[16px] lg:px-[24px]">
+                                <a href="index.html">
+                                    <img class="w-[150px] lg:w-[250px]" src="../src/img/logo-puskurjar-text.svg" alt="">
+                                </a>
+                                <div class="grid gap-1 lg:gap-2">
+                                    <h4 class="lg:text-[20px] text-violet11">Hai, Selamat Datang</h4>
+                                    <h2 class="text-[20px] font-semibold text-violet11 lg:text-[32px]">Di Aplikasi
+                                        Kontributor
+                                        Puskurjar</h2>
+                                    <p class="text-[14px] text-biruLaut9 lg:text-[16px]">Aplikasi Kontributor merupakan
+                                        aplikasi
+                                        induk
+                                        dalam manajemen
+                                        pengembangan keprofesian
+                                        dan
+                                        keberlanjutn</p>
+                                </div>
+                                <!-- input nama password -->
+                                <div class="grid gap-[12px] lg:gap-[18px]">
+                                    <div class="grid gap-[6px] lg:gap-[10px]">
+                                        <p class="font-semibold text-[14px] lg:text-[16px] text-violet11">Nama Pengguna
+                                        </p>
+                                        <div
+                                            class="flex items-center justify-between px-[16px] py-[8px] lg:px-[24px] lg:py-[16px] border border-1 border-biruLaut7 rounded-[10px] focus-within:ring-1 focus-within:ring-violet6">
+                                            <img class="w-[18px] lg:w-[24px]" src="../src/img/icon/user.svg" alt="">
+                                            <input id="fieldActive"
+                                                class="w-full border border-none focus:ring-0 text-violet11" type="text"
+                                                placeholder="Masukkan Nama Pengguna">
+                                        </div>
+                                    </div>
+                                    <div class="grid gap-[6px] lg:gap-[10px]">
+                                        <p class="font-semibold text-[14px] lg:text-[16px] text-violet11">Password *</p>
+                                        <div
+                                            class="password-container flex items-center justify-between px-[16px] py-[8px] lg:px-[24px] lg:py-[16px] border border-1 border-biruLaut7 rounded-[10px] focus-within:ring-1 focus-within:ring-violet6">
+                                            <div class="flex w-full items-center gap-[2px] lg:gap-[6px] ">
+                                                <img class="w-[18px] lg:w-[24px]" src="../src/img/icon/password.svg"
+                                                    alt="">
+                                                <input id="password"
+                                                    class="password w-full border border-none focus:ring-0 text-violet11"
+                                                    type="password" placeholder="Masukkan Password">
+                                            </div>
+                                            <div class="cursor-pointer">
+                                                <img id="eye" class="eye" src="../src/img/icon/eye-password.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <div class="flex gap-2 items-center">
+                                            <input type="checkbox" name="">
+                                            <p class="text-violet8">Ingat saya</p>
+                                        </div>
+                                        <a class="text-[14px] lg:text-[16px] text-violet6 hover:text-violet10"
+                                            href="forgot-password.html">Lupa Kata
+                                            Sandi?</a>
+                                    </div>
+                                </div>
+                                <!-- input nama password end -->
 
-                <!-- Modal footer -->
-                <div
-                    class="flex flex-shrink-0 flex-wrap gap-x-2 items-center justify-end rounded-b-md border-t-2 border-neutral-100 p-4 dark:border-white/10">
-                    <button
-                        class="inline-block rounded-full bg-violet1 px-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-violet10 transition duration-150 ease-in-out hover:bg-violet2"
-                        data-twe-modal-dismiss data-twe-ripple-init data-twe-ripple-color="light">
-                        Cancel
-                    </button>
-                    <button id="loginBtn"
-                        class="ms-1 inline-block rounded-full bg-gr-violet-86 px-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-white transition duration-150 ease-in-out hover:bg-gr-biru-108"
-                        data-twe-ripple-init data-twe-ripple-color="light">
-                        Okay, Got it
-                    </button>
+                                <!-- button -->
+                                <div class="grid gap-[12px] lg:gap-[24px]">
+                                    <button
+                                        class="py-[10px] lg:py-[14px] bg-gr-violet-86 text-white lg:text-[20px] hover:bg-gr-violet-108 rounded-[10px]">Masuk</button>
+                                    <button
+                                        class="flex justify-center items-center gap-[8px] lg:gap-[12px] py-[10px] lg:py-[14px] bg-white text-violet11 border border-1 border-violet6 lg:text-[20px] hover:bg-gr-violet-86 hover:text-white rounded-[10px]"><img
+                                            class="w-[18px] lg:w-[24px]" src="../src/img/icon/google.svg" alt="">Masuk
+                                        dengan Google</button>
+                                    <div class="flex justify-center text-[12px] lg:text-[16px] text-violet6">Belum
+                                        memiliki akun?
+                                        <button class="ps-1 font-semibold hover:underline-offset-1 hover:underline"
+                                            data-twe-toggle="modal" data-twe-target="#exampleModalRegist"
+                                            data-twe-ripple-init data-twe-ripple-color="light">Buat
+                                            Akun
+                                            Disini</button>
+                                    </div>
+                                </div>
+                                <!-- button End -->
+                            </div>
+                            <!-- kiri end -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Modal end -->
+    <!-- Modal Login end -->
+
+    <!-- Modal Regist Start TW Element -->
+    <!-- Modal Header -->
+    <div data-twe-modal-init
+        class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+        id="exampleModalRegist" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div data-twe-modal-dialog-ref
+            class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out md:container lg:container px-[20px]">
+            <div
+                class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-transparent bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark">
+                <!-- isi Modal Regist -->
+                <div class="">
+                    <div class="flex justify-center items-center py-[30px]">
+                        <div
+                            class="w-full block lg:flex items-center bg-white rounded-[16px] lg:rounded-[32px] p-[24px] gap-[32px] drop-shadow-drop2">
+                            <!-- kiri -->
+                            <div
+                                class="w-full relative m-p p-0 bg-gr-violet-86 rounded-[12px] lg:rounded-[24px] mb-[32px] lg:mb-0">
+                                <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                                    <!-- Carousel wrapper -->
+                                    <div class="relative h-[400px] overflow-hidden rounded-lg lg:!h-[900px]">
+                                        <!-- Item 1 -->
+                                        <div class="flex flex-col justify-center duration-700 ease-in-out px-[16px] lg:px-[32px]"
+                                            data-carousel-item>
+                                            <div class="grid gap-[32px] lg:gap-[64px]">
+                                                <img class="rounded-[24px]" src="../src/img/content1.jpg" alt="...">
+                                                <div class="grid gap-[12px] lg:gap-[24px] px-[16px] lg:px-[32px]">
+                                                    <h4 class="text-white text-center text-[16px] lg:text-[32px]">Apa
+                                                        itu
+                                                        Kontributor?
+                                                    </h4>
+                                                    <p class="text-white text-center text-[12px] lg:text-[20px]">Lorem
+                                                        ipsum dolor
+                                                        sit
+                                                        amet,
+                                                        consectetur
+                                                        adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div class="flex flex-col justify-center duration-700 ease-in-out px-[16px] lg:px-[32px]"
+                                            data-carousel-item>
+                                            <div class="grid gap-[32px] lg:gap-[64px]">
+                                                <img class="rounded-[24px]" src="../src/img/content2.jpg" alt="...">
+                                                <div class="grid gap-[12px] lg:gap-[24px] px-[16px] lg:px-[32px]">
+                                                    <h4 class="text-white text-center text-[16px] lg:text-[32px]">Kenapa
+                                                        itu
+                                                        Kontributor?
+                                                    </h4>
+                                                    <p class="text-white text-center text-[12px] lg:text-[20px]">Lorem
+                                                        ipsum dolor
+                                                        sit
+                                                        amet,
+                                                        consectetur
+                                                        adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Item 3 -->
+                                        <div class="flex flex-col justify-center duration-700 ease-in-out px-[16px] lg:px-[32px]"
+                                            data-carousel-item>
+                                            <div class="grid gap-[32px] lg:gap-[64px]">
+                                                <img class="rounded-[24px]" src="../src/img/content3.jpg" alt="...">
+                                                <div class="grid gap-[12px] lg:gap-[24px] px-[16px] lg:px-[32px]">
+                                                    <h4 class="text-white text-center text-[16px] lg:text-[32px]">Siapa
+                                                        itu
+                                                        Kontributor?
+                                                    </h4>
+                                                    <p class="text-white text-center text-[12px] lg:text-[20px]">Lorem
+                                                        ipsum dolor
+                                                        sit
+                                                        amet,
+                                                        consectetur
+                                                        adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slider indicators -->
+                                    <div
+                                        class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true"
+                                            aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
+                                            aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
+                                            aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                                    </div>
+                                    <!-- Slider controls -->
+                                    <button type="button"
+                                        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                        data-carousel-prev>
+                                        <span
+                                            class="inline-flex items-center justify-center w-[30px] h-[30px] lg:!w-[60px] lg:h-[60px] rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-1 group-focus:ring-white dark:group-focus:ring-white-800/70 group-focus:outline-none">
+                                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 6 10">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="1" d="M5 1 1 5l4 4" />
+                                            </svg>
+                                            <span class="sr-only">Previous</span>
+                                        </span>
+                                    </button>
+                                    <button type="button"
+                                        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                        data-carousel-next>
+                                        <span
+                                            class="inline-flex items-center justify-center w-[30px] h-[30px] lg:!w-[60px] lg:h-[60px] rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-1 group-focus:ring-white dark:group-focus:ring-white-800/70 group-focus:outline-none">
+                                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 6 10">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="1" d="m1 9 4-4-4-4" />
+                                            </svg>
+                                            <span class="sr-only">Next</span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- kiri end -->
+
+                            <!-- kanan -->
+                            <div class="w-full relative flex flex-col gap-[16px] lg:gap-[32px] px-[16px] lg:px-[24px]">
+                                <img class="w-[150px] lg:w-[250px]" src="../src/img/logo-puskurjar-text.svg" alt="">
+                                <div class="flex flex-col gap-1 lg:gap-2">
+                                    <h2 class="text-[20px] font-semibold text-violet11 lg:text-[32px]">Registrasi Akun
+                                    </h2>
+                                    <p class="text-[14px] text-biruLaut9 lg:text-[16px]">Aplikasi Kontributor merupakan
+                                        aplikasi
+                                        induk
+                                        dalam manajemen
+                                        pengembangan keprofesian
+                                        dan
+                                        keberlanjutn</p>
+                                </div>
+                                <!-- input nama password -->
+                                <div class="flex flex-col gap-[12px] lg:gap-[18px]">
+                                    <div class="grid gap-[6px] lg:gap-[10px]">
+                                        <p class="font-semibold text-[14px] lg:text-[16px] text-violet11">Nama Pengguna
+                                            *</p>
+                                        <div
+                                            class="flex items-center justify-between px-[16px] py-[8px] lg:px-[24px] lg:py-[16px] border border-1 border-biruLaut7 rounded-[10px] focus-within:ring-1 focus-within:ring-violet6">
+                                            <img class="w-[18px] lg:w-[24px]" src="../src/img/icon/user.svg" alt="">
+                                            <input id="fieldActive"
+                                                class="w-full bg-transparent border border-none focus:ring-0 text-violet11"
+                                                type="text" placeholder="Masukkan Nama Pengguna">
+                                        </div>
+                                    </div>
+                                    <div class="grid gap-[6px] lg:gap-[10px]">
+                                        <p class="font-semibold text-[14px] lg:text-[16px] text-violet11">Email *</p>
+                                        <div
+                                            class="flex items-center justify-between px-[16px] py-[8px] lg:px-[24px] lg:py-[16px] border border-1 border-biruLaut7 rounded-[10px] focus-within:ring-1 focus-within:ring-violet6">
+                                            <img class="w-[18px] lg:w-[24px]" src="../src/img/icon/user.svg" alt="">
+                                            <input
+                                                class="w-full bg-transparent border border-none focus:ring-0 text-violet11"
+                                                type="text" placeholder="Masukkan Nama Pengguna">
+                                        </div>
+                                    </div>
+                                    <div class="grid gap-[6px] lg:gap-[10px]">
+                                        <p class="font-semibold text-[14px] lg:text-[16px] text-violet11">Password *</p>
+                                        <div
+                                            class="password-container flex items-center justify-between px-[16px] py-[8px] lg:px-[24px] lg:py-[16px] border border-1 border-biruLaut7 rounded-[10px] focus-within:ring-1 focus-within:ring-violet6">
+                                            <div class="flex w-full items-center gap-[2px] lg:gap-[6px]">
+                                                <img class="w-[18px] lg:w-[24px]" src="../src/img/icon/password.svg"
+                                                    alt="">
+                                                <input id="password" type="password"
+                                                    class="password w-full bg-transparent border border-none focus:ring-0 text-violet11"
+                                                    placeholder="Masukan Password">
+                                            </div>
+                                            <div class="cursor-pointer">
+                                                <img id="eye2" class="eye" src="../src/img/icon/eye-password.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Captcha checkbox -->
+                                    <div
+                                        class="flex justify-between items-center w-[350px] p-[12px] lg:p-[16px] border border-1 border-[#ababab] rounded-[10px]">
+                                        <div class="flex items-center gap-[8px] lg:gap-[16px]">
+                                            <input class="" type="checkbox" name="" id="">
+                                            <p class="text-[12px] lg:text-[16px]">I'm not a robot</p>
+                                        </div>
+                                        <img src="../src/img/captcha.svg" alt="">
+                                    </div>
+                                    <!-- Captcha checkbox End -->
+
+                                    <!-- button -->
+                                    <div class="grid gap-[12px] lg:gap-[24px]">
+                                        <button
+                                            class="py-[10px] lg:py-[14px] bg-gr-violet-86 text-white lg:text-[20px] hover:bg-gr-violet-108 rounded-[10px]">Registrasi
+                                            Akun</button>
+                                        <button
+                                            class="flex justify-center items-center gap-[8px] lg:gap-[12px] py-[10px] lg:py-[14px] bg-white text-violet11 border border-1 border-violet6 lg:text-[20px] hover:bg-gr-violet-86 hover:text-white rounded-[10px]"><img
+                                                class="w-[18px] lg:w-[24px]" src="../src/img/icon/google.svg"
+                                                alt="">Registrasi
+                                            dengan Google</button>
+                                        <div class="flex justify-center text-[12px] lg:text-[16px] text-violet6">Kembali
+                                            ke halaman
+                                            <button class="ps-1 font-semibold hover:underline-offset-1 hover:underline"
+                                                data-twe-toggle="modal" data-twe-target="#exampleModalLogin"
+                                                data-twe-ripple-init data-twe-ripple-color="light">Masuk?</button>
+                                        </div>
+                                    </div>
+                                    <!-- button End -->
+                                </div>
+                                <!-- input nama password end -->
+                            </div>
+                            <!-- kanan end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Regist end -->
 
     <!-- Hero Section -->
-    <div class="px-[16px] py-[16px] lg:grid lg:grid-cols-2 lg:gap-[32px] lg:px-[160px] lg:py-[80px]">
-        <div class="order-last carousel-slider ">
-            <!-- carousel-1 -->
-            <div class="w-full relative mb-[16px]">
-                <div class="swiper centered-slide-carousel-1 swiper-container relative">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="bg-black rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
+    <div class="">
+        <div class="md:container lg:container px-[16px]">
+            <div class="py-[16px] lg:grid lg:grid-cols-2 lg:gap-[32px] lg:py-[40px]">
+                <div class="order-last carousel-slider section" data-animation="animate__fadeInRight">
+                    <!-- carousel-1 -->
+                    <div class="w-full relative mb-[10px]">
+                        <div class="swiper centered-slide-carousel-1 swiper-container relative">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="bg-black rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/7.jpg" alt="">
+                                    </div>
                                 </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/7.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/8.jpg" alt="">
+                                    </div>
                                 </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/8.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/9.jpg" alt="">
+                                    </div>
                                 </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/9.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/10.jpg" alt="">
+                                    </div>
                                 </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/10.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/11.jpg" alt="">
+                                    </div>
                                 </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/11.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/12.jpg" alt="">
+                                    </div>
                                 </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/12.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- carousel-2 -->
-            <div class="w-full relative mb-[16px]">
-                <div class="swiper centered-slide-carousel-2 swiper-container relative">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
-                                </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
-                                </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/2.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
-                                </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/3.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
-                                </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/4.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
-                                </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/5.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
-                                </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/6.jpg" alt="">
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- carousel-3 -->
-            <div class="w-full relative mb-[16px]">
-                <div class="swiper centered-slide-carousel-3 swiper-container relative">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
+                    <!-- carousel-2 -->
+                    <div class="w-full relative mb-[10px]">
+                        <div class="swiper centered-slide-carousel-2 swiper-container relative">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/1.jpg" alt="">
+                                    </div>
                                 </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/13.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/2.jpg" alt="">
+                                    </div>
                                 </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/14.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/3.jpg" alt="">
+                                    </div>
                                 </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/15.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/4.jpg" alt="">
+                                    </div>
                                 </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/16.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/5.jpg" alt="">
+                                    </div>
                                 </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/17.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
-                                <div class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[12px] opacity-15">
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/6.jpg" alt="">
+                                    </div>
                                 </div>
-                                <img class="rounded-[12px]" src="../src/img/documentation/18.jpg" alt="">
                             </div>
                         </div>
                     </div>
+
+                    <!-- carousel-3 -->
+                    <div class="w-full relative mb-[10px]">
+                        <div class="swiper centered-slide-carousel-3 swiper-container relative">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/13.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/14.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/15.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/16.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/17.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                        <div
+                                            class="absolute bg-gr-violet-86 z-50 w-full h-full rounded-[10px] opacity-15">
+                                        </div>
+                                        <img class="rounded-[10px]" src="../src/img/documentation/18.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="grid section" data-animation="animate__fadeInLeft">
+                    <h4 class="text-[24px] font-semibold text-violet11 lg:text-[48px] mb-2">
+                        Mari Berkolaborasi <br>
+                        Dalam
+                        Perkembangan
+                        <span class="text-biru6">Kurikulum</span>
+                    </h4>
+                    <p class="text-biruLaut9 leading-[180%] lg:text-[16px] mb-3">Saat ini, Sahabat berada di halaman
+                        informasi
+                        pendaftaran
+                        Kontributor
+                        Pengembangan
+                        Kurikulum. Silahkan
+                        cermati informasi
+                        di halaman berikut sebelum melakukan pendaftaran.</p>
+                    <a href="regist.html" class="w-fit">
+                        <button
+                            class="px-[16px] py-[10px] bg-gr-violet-86 flex items-center gap-2 rounded-[8px] text-white transition ease-linear duration-1000 hover:bg-gr-violet-108 lg:px-[24px] lg:py-[16px] lg:gap-3 lg:text-[16px] lg:rounded-[10px] transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">Daftar
+                            Sekarang
+                            <img class="w-[16px] lg:w-[24px]" src="../src/img/right-arrow.svg" alt=""></button>
+                    </a>
                 </div>
             </div>
-
-
-        </div>
-        <div class="grid">
-            <h4 class="text-[24px] font-semibold text-violet11 lg:text-[48px] mb-2">Mari Berkolaborasi <br> Dalam
-                Perkembangan
-                <span class="text-biru6">Kurikulum</span>
-            </h4>
-            <p class="text-biruLaut9 leading-[180%] lg:text-[16px] mb-3">Saat ini, Sahabat berada di halaman informasi
-                pendaftaran
-                Kontributor
-                Pengembangan
-                Kurikulum. Silahkan
-                cermati informasi
-                di halaman berikut sebelum melakukan pendaftaran.</p>
-            <a href="regist.html" class="w-fit">
-                <button
-                    class="px-[16px] py-[10px] bg-gr-violet-86 flex items-center gap-2 rounded-[10px] text-white hover:bg-gr-violet-108 lg:px-[28px] lg:py-[20px] lg:gap-3 lg:text-[20px] lg:rounded-[16px]">Daftar
-                    Sekarang
-                    <img class="w-[16px] lg:w-[24px]" src="../src/img/right-arrow.svg" alt=""></button>
-            </a>
         </div>
     </div>
     <!-- Hero Section End -->
 
     <!-- content 1 -->
-    <div id="apa" class="px-[16px] pt-[48px] lg:pt-[140px] lg:px-[160px] ">
-        <div class="lg:grid grid-cols-12 lg:gap-[32px] items-start">
-            <div class="w-full flex col-span-5 justify-center">
-                <img class="w-fit mb-6 rounded-[24px]" src="../src/img/content1.jpg" alt="">
-            </div>
-            <div class="w-full col-span-7">
-                <h2 class="font-semibold text-[24px] text-violet11 leading-[150%] lg:text-[48px] mb-[10px]">Apa itu
-                    Lorem ipsum dolor
-                    sit amet,
-                    adipiscing
-                    elit.
-                </h2>
-                <p class="text-biruLaut10 text-[16px] leading-[180%] lg:text-[16px]">Kontributor pengembangan kurikulum
-                    adalah
-                    program Pusat
-                    Kurikulum
-                    dan
-                    Pembelajaran yang memberikan
-                    kesempatan kepada
-                    berbagai pihak seperti guru, dosen, praktisi pendidikan, dan pihak lainnya untuk berkontribusi atau
-                    terlibat langsung
-                    dalam pengembangan kurikulum dan pembelajaran.</p>
+    <div id="apa" class="section-scroll">
+        <div class="md:container lg:container px-[16px] pt-[32px] lg:pt-[60px]">
+            <div class="lg:grid grid-cols-12 lg:gap-[32px] items-start">
+                <div class="w-full flex col-span-5 justify-center section" data-animation="animate__fadeInLeft">
+                    <img class="w-fit mb-6 lg:mb-0 rounded-[24px]" src="../src/img/content1.jpg" alt="">
+                </div>
+                <div class="w-full col-span-7 section" data-animation="animate__fadeInRight">
+                    <h2 class="font-semibold text-[24px] text-violet11 leading-[150%] lg:text-[48px] mb-[10px]">
+                        Apa itu
+                        Kontributor Pengembangan Kurikulum?
+                    </h2>
+                    <p class="text-biruLaut10 text-[16px] leading-[180%] lg:text-[16px]">Kontributor pengembangan
+                        kurikulum
+                        merupakan program Pusat Kurikulum dan Pembelajaran yang memberikan kesempatan kepada
+                        berbagai pihak untuk terlibat langsung dalam pengembangan kurikulum dan pembelajaran.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
     <!-- content 1 End -->
 
     <!-- content 2 -->
-    <div class="px-[16px] pt-[48px] lg:pt-[140px] lg:px-[160px] ">
-        <div class="lg:grid grid-cols-12 lg:gap-[32px] items-start">
-            <div class="w-full flex col-span-5 justify-center order-last">
-                <img class="w-fit mb-6 rounded-[24px]" src="../src/img/content2.jpg" alt="">
-            </div>
-            <div class="w-full col-span-7">
-                <h2 class="font-semibold text-[24px] text-violet11 leading-[150%] lg:text-[48px] mb-[10px]">Mengapa
-                    kontribusi Anda
-                    berarti?
-                </h2>
-                <p class="text-biruLaut10 text-[16px] leading-[180%] lg:text-[16px]">Kontributor pengembangan kurikulum
-                    adalah program Pusat Kurikulum dan Pembelajaran yang memberikan kesempatan kepada berbagai pihak
-                    seperti guru, dosen, praktisi pendidikan, dan pihak lainnya untuk berkontribusi atau terlibat
-                    langsung dalam pengembangan kurikulum dan pembelajaran.</p>
+    <div class="">
+        <div class="md:container lg:container px-[16px] pt-[48px] lg:pt-[60px]">
+            <div class="lg:grid grid-cols-12 lg:gap-[32px] items-start">
+                <div class="w-full flex col-span-5 justify-center order-last section"
+                    data-animation="animate__fadeInRight">
+                    <img class="w-fit mb-6 lg:mb-0 rounded-[24px]" src="../src/img/content2.jpg" alt="">
+                </div>
+                <div class="w-full col-span-7 section" data-animation="animate__fadeInLeft">
+                    <h2 class="font-semibold text-[24px] text-violet11 leading-[150%] lg:text-[48px] mb-[10px]">
+                        Mengapa
+                        kontribusi Anda berarti?
+                    </h2>
+                    <p class="text-biruLaut10 text-[16px] leading-[180%] lg:text-[16px]">Keterlibatan Anda dapat
+                        memperkaya
+                        perspektif dalam pengembangan kurikulum, sehingga kurikulum yang dihasilkan sesuai
+                        dengan kebutuhan peserta didik, inklusif, dan relevan dengan konteks sosial, budaya, serta
+                        perkembangan teknologi.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    </div>
+
     <!-- content 2 End -->
 
     <!-- content 3 -->
-    <div class="px-[16px] pt-[48px] lg:pt-[140px] lg:px-[160px] ">
+    <div class="md:container lg:container px-[16px] pt-[48px] lg:pt-[60px]">
         <div class="lg:grid grid-cols-12 lg:gap-[32px] items-start">
-            <div class="w-full flex col-span-5 justify-center">
-                <img class="w-fit mb-6 rounded-[24px]" src="../src/img/content3.jpg" alt="">
+            <div class="w-full flex col-span-5 justify-center section" data-animation="animate__fadeInLeft">
+                <img class="w-fit mb-6 lg:mb-0 rounded-[24px]" src="../src/img/content3.jpg" alt="">
             </div>
-            <div class="w-full col-span-7">
-                <h2 class="font-semibold text-[24px] text-violet11 leading-[150%] lg:text-[48px] mb-[10px]">Siapa
-                    kontribusi Anda
-                    berarti?
+            <div class="w-full col-span-7 break-before-page section" data-animation="animate__fadeInRight">
+                <h2 class="font-semibold text-[24px] text-violet11 leading-[150%] lg:text-[48px] mb-[10px]">Siapa yang
+                    bisa menjadi kontributor pengembangan kurikulum?
                 </h2>
-                <p class="text-biruLaut10 text-[16px] leading-[180%] lg:text-[16px]">Kontributor pengembangan kurikulum
-                    adalah
-                    program Pusat
-                    Kurikulum
-                    dan
-                    Pembelajaran yang memberikan
-                    kesempatan kepada
-                    berbagai pihak seperti guru, dosen, praktisi pendidikan, dan pihak lainnya untuk berkontribusi atau
-                    terlibat langsung
-                    dalam pengembangan kurikulum dan pembelajaran.</p>
+                <p class="text-biruLaut10 text-[16px] leading-[180%] lg:text-[16px]">Kami membutuhkan kolaborasi dari
+                    unsur-unsur yang meliputi pemangku kepentingan pendidikan, praktisi (Dunia Kerja dan
+                    Dunia Industri), akademisi, serta bidang keahlian lainnya yang relevan dalam pengembangan kurikulum
+                    dan pembelajaran.
+                </p>
             </div>
         </div>
     </div>
@@ -404,113 +808,120 @@
     <!-- content 3 End -->
 
     <!-- content 4 -->
-    <div class="px-[16px] pt-[48px] lg:pt-[140px] lg:px-[160px]">
+    <div class="md:container lg:container px-[16px] pt-[48px] lg:pt-[100px]">
         <div class="block">
-            <h3 class="text-violet11 text-center text-[24px] lg:text-[48px] lg:mb-[64px]">Temukan Manfaat Luar Biasa
+            <h3 class="text-violet11 text-center text-[24px] lg:text-[48px] lg:mb-[64px] section"
+                data-animation="animate__fadeInDown">
+                Temukan Manfaat Luar Biasa
                 dari <br>
                 Bimtek ini untuk Bapak dan Ibu Guru</h3>
             <div class="relative flex justify-center">
-                <img src="../src/img/manfaat.svg" alt="">
+                <img class="section" src="../src/img/manfaat.svg" data-animation="animate__fadeInUp" alt="">
+                <div class=" absolute scale-[0.7] lg:scale-[0.9] hidden lg:flex justify-center gap-8">
+                    <!-- manfaat 1 -->
+                    <div class="hidden lg:block bg-white border border-violet8 rounded-[32px] p-[20px] w-[534px] shadow-box1 section animate__delay-1s"
+                        data-animation="animate__fadeInLeft">
+                        <div class="grid grid-cols-4 gap-[16px]">
+                            <div class="col-span-1 p-[14px] bg-gr-violet-86 rounded-[20px]">
+                                <img class="w-[78px]" src="../src/img/icon/manfaat1.svg" alt="">
+                            </div>
+                            <div class="block col-span-3">
+                                <p class="text-biru11 leading-[180%] mb-1">Meningkatkan Pengetahuan dan Kompetensi dalam
+                                    Pembelajaran
+                                    yang Efektif
+                                </p>
+                                <p class="text-biruLaut9 text-[12px] leading-[180%]">Meningkatkan pemahaman teknis
+                                    penyusunan
+                                    Modul
+                                    Ajar,
+                                    dan Modul Projek
+                                    yang
+                                    sesuai ketentuan.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- manfaat 2 -->
+                    <div class=" hidden lg:block bg-white border border-violet8 rounded-[32px] p-[20px] w-[534px] shadow-box1 section animate__delay-1s"
+                        data-animation="animate__fadeInRight">
+                        <div class="grid grid-cols-4 gap-[16px]">
+                            <div class="col-span-1 p-[14px] bg-gr-violet-86 rounded-[20px]">
+                                <img class="w-[78px]" src="../src/img/icon/manfaat3.svg" alt="">
+                            </div>
+                            <div class="block col-span-3">
+                                <p class="text-biru11 leading-[180%] mb-1">Meningkatkan Pengetahuan dan Kompetensi dalam
+                                    Pembelajaran
+                                    yang Efektif
+                                </p>
+                                <p class="text-biruLaut9 text-[12px] leading-[180%]">Meningkatkan pemahaman teknis
+                                    penyusunan
+                                    Modul
+                                    Ajar,
+                                    dan Modul Projek
+                                    yang
+                                    sesuai ketentuan.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <!-- manfaat 1 -->
-                <div
-                    class="scale-[0.7] lg:scale-[0.9] hidden lg:block absolute lg:left-[80px] lg:top-0 bg-white border border-[1px] border-violet8 rounded-[32px] p-[20px] w-[534px] shadow-box1">
-                    <div class="grid grid-cols-4 gap-[16px]">
-                        <div class="col-span-1 p-[14px] bg-gr-violet-86 rounded-[20px]">
-                            <img class="w-[78px]" src="../src/img/icon/manfaat1.svg" alt="">
+                <div class="absolute scale-[0.7] lg:scale-[0.9] hidden lg:flex justify-center gap-[200px] top-[210px]">
+                    <!-- manfaat 3 -->
+                    <div class="hidden lg:block bg-white border border-violet8 rounded-[32px] p-[20px] w-[534px] shadow-box1 section animate__delay-1s"
+                        data-animation="animate__fadeInLeft">
+                        <div class="grid grid-cols-4 gap-[16px]">
+                            <div class="col-span-1 p-[14px] bg-gr-violet-86 rounded-[20px]">
+                                <img class="w-[78px]" src="../src/img/icon/manfaat2.svg" alt="">
+                            </div>
+                            <div class="block col-span-3">
+                                <p class="text-biru11 leading-[180%] mb-1">Meningkatkan Pengetahuan dan Kompetensi dalam
+                                    Pembelajaran
+                                    yang Efektif
+                                </p>
+                                <p class="text-biruLaut9 text-[12px] leading-[180%]">Meningkatkan pemahaman teknis
+                                    penyusunan
+                                    Modul
+                                    Ajar,
+                                    dan Modul Projek
+                                    yang
+                                    sesuai ketentuan.
+                                </p>
+                            </div>
                         </div>
-                        <div class="block col-span-3">
-                            <p class="text-biru11 leading-[180%] mb-1">Meningkatkan Pengetahuan dan Kompetensi dalam
-                                Pembelajaran
-                                yang Efektif
-                            </p>
-                            <p class="text-biruLaut9 text-[12px] leading-[180%]">Meningkatkan pemahaman teknis
-                                penyusunan
-                                Modul
-                                Ajar,
-                                dan Modul Projek
-                                yang
-                                sesuai ketentuan.
-                            </p>
+                    </div>
+                    <!-- manfaat 4 -->
+                    <div class="hidden lg:block bg-white border border-violet8 rounded-[32px] p-[20px] w-[534px] shadow-box1 section animate__delay-1s"
+                        data-animation="animate__fadeInRight">
+                        <div class="grid grid-cols-4 gap-[16px]">
+                            <div class="col-span-1 p-[14px] bg-gr-violet-86 rounded-[20px]">
+                                <img class="w-[78px]" src="../src/img/icon/manfaat4.svg" alt="">
+                            </div>
+                            <div class="block col-span-3">
+                                <p class="text-biru11 leading-[180%] mb-1">Meningkatkan Pengetahuan dan Kompetensi dalam
+                                    Pembelajaran
+                                    yang Efektif
+                                </p>
+                                <p class="text-biruLaut9 text-[12px] leading-[180%]">Meningkatkan pemahaman teknis
+                                    penyusunan
+                                    Modul
+                                    Ajar,
+                                    dan Modul Projek
+                                    yang
+                                    sesuai ketentuan.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- manfaat 2 -->
-                <div
-                    class="scale-[0.7] lg:scale-[0.9] hidden lg:block absolute lg:right-[80px] lg:top-0 bg-white border border-[1px] border-violet8 rounded-[32px] p-[20px] w-[534px] shadow-box1">
-                    <div class="grid grid-cols-4 gap-[16px]">
-                        <div class="col-span-1 p-[14px] bg-gr-violet-86 rounded-[20px]">
-                            <img class="w-[78px]" src="../src/img/icon/manfaat3.svg" alt="">
-                        </div>
-                        <div class="block col-span-3">
-                            <p class="text-biru11 leading-[180%] mb-1">Meningkatkan Pengetahuan dan Kompetensi dalam
-                                Pembelajaran
-                                yang Efektif
-                            </p>
-                            <p class="text-biruLaut9 text-[12px] leading-[180%]">Meningkatkan pemahaman teknis
-                                penyusunan
-                                Modul
-                                Ajar,
-                                dan Modul Projek
-                                yang
-                                sesuai ketentuan.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- manfaat 3 -->
-                <div
-                    class="scale-[0.7] lg:scale-[0.9] hidden lg:block absolute lg:left-0 lg:top-[210px] bg-white border border-[1px] border-violet8 rounded-[32px] p-[20px] w-[534px] shadow-box1">
-                    <div class="grid grid-cols-4 gap-[16px]">
-                        <div class="col-span-1 p-[14px] bg-gr-violet-86 rounded-[20px]">
-                            <img class="w-[78px]" src="../src/img/icon/manfaat2.svg" alt="">
-                        </div>
-                        <div class="block col-span-3">
-                            <p class="text-biru11 leading-[180%] mb-1">Meningkatkan Pengetahuan dan Kompetensi dalam
-                                Pembelajaran
-                                yang Efektif
-                            </p>
-                            <p class="text-biruLaut9 text-[12px] leading-[180%]">Meningkatkan pemahaman teknis
-                                penyusunan
-                                Modul
-                                Ajar,
-                                dan Modul Projek
-                                yang
-                                sesuai ketentuan.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- manfaat 4 -->
-                <div
-                    class="scale-[0.7] lg:scale-[0.9] hidden lg:block absolute lg:right-0 lg:top-[210px] bg-white border border-[1px] border-violet8 rounded-[32px] p-[20px] w-[534px] shadow-box1">
-                    <div class="grid grid-cols-4 gap-[16px]">
-                        <div class="col-span-1 p-[14px] bg-gr-violet-86 rounded-[20px]">
-                            <img class="w-[78px]" src="../src/img/icon/manfaat4.svg" alt="">
-                        </div>
-                        <div class="block col-span-3">
-                            <p class="text-biru11 leading-[180%] mb-1">Meningkatkan Pengetahuan dan Kompetensi dalam
-                                Pembelajaran
-                                yang Efektif
-                            </p>
-                            <p class="text-biruLaut9 text-[12px] leading-[180%]">Meningkatkan pemahaman teknis
-                                penyusunan
-                                Modul
-                                Ajar,
-                                dan Modul Projek
-                                yang
-                                sesuai ketentuan.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
 
             <!-- manfaat di luar -->
             <div class="grid justify-center">
                 <!-- manfaat 1 -->
-                <div
-                    class="lg:hidden bg-white border border-[1px] border-violet8 rounded-[16px] p-[12px] w-auto shadow-box1 mb-[16px]">
+                <div class="lg:hidden bg-white border border-violet8 rounded-[16px] p-[12px] w-auto shadow-box1 mb-[16px] section animate__delay-1s"
+                    data-animation="animate__fadeInLeft">
                     <div class="flex gap-[16px]">
                         <div class="p-[8px] bg-gr-violet-86 rounded-[10px] flex justify-center items-center">
                             <img class="w-auto" src="../src/img/icon/manfaat1.svg" alt="">
@@ -532,8 +943,8 @@
                     </div>
                 </div>
                 <!-- manfaat 2 -->
-                <div
-                    class="lg:hidden bg-white border border-[1px] border-violet8 rounded-[16px] p-[12px] w-auto shadow-box1 mb-[16px]">
+                <div class="lg:hidden bg-white border border-violet8 rounded-[16px] p-[12px] w-auto shadow-box1 mb-[16px] section animate__delay-1s"
+                    data-animation="animate__fadeInRight">
                     <div class="flex gap-[16px]">
                         <div class="p-[8px] bg-gr-violet-86 rounded-[10px] flex justify-center items-center">
                             <img class="w-auto" src="../src/img/icon/manfaat2.svg" alt="">
@@ -555,8 +966,8 @@
                     </div>
                 </div>
                 <!-- manfaat 3 -->
-                <div
-                    class="lg:hidden bg-white border border-[1px] border-violet8 rounded-[16px] p-[12px] w-auto shadow-box1 mb-[16px]">
+                <div class="lg:hidden bg-white border border-violet8 rounded-[16px] p-[12px] w-auto shadow-box1 mb-[16px] section animate__delay-1s"
+                    data-animation="animate__fadeInLeft">
                     <div class="flex gap-[16px]">
                         <div class="p-[8px] bg-gr-violet-86 rounded-[10px] flex justify-center items-center">
                             <img class="w-auto" src="../src/img/icon/manfaat3.svg" alt="">
@@ -578,8 +989,8 @@
                     </div>
                 </div>
                 <!-- manfaat 4 -->
-                <div
-                    class="lg:hidden bg-white border border-[1px] border-violet8 rounded-[16px] p-[12px] w-auto shadow-box1 mb-[16px]">
+                <div class="lg:hidden bg-white border border-violet8 rounded-[16px] p-[12px] w-auto shadow-box1 mb-[16px] section animate__delay-1s"
+                    data-animation="animate__fadeInRight">
                     <div class="flex gap-[16px]">
                         <div class="p-[8px] bg-gr-violet-86 rounded-[10px] flex justify-center items-center">
                             <img class="w-auto" src="../src/img/icon/manfaat4.svg" alt="">
@@ -607,40 +1018,41 @@
     <!-- content 4 End -->
 
     <!-- NavPills Tab -->
-    <div class="px-[16px] lg:px-[160px] pt-[48px] lg:pt-[140px] mb-[48px] lg:mb-[140px]">
+    <div id="tatacara" class="md:container lg:container px-[16px] pt-[48px] lg:pt-[100px] mb-[48px] lg:mb-[100px]">
         <!--Tabs navigation-->
-        <ul class="mb-5 block lg:flex list-none flex-row flex-wrap" role="tablist" data-twe-nav-ref>
-            <li role="presentation" class="flex-auto text-center">
-                <a id="seringditanya" href="#tabs-home01"
-                    class="my-2 block px-[16px] py-[16px] text-[16px] rounded-[12px] lg:text-[20px] leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-gr-violet-86 hover:text-white focus:isolate focus:border-transparent data-[twe-nav-active]:bg-gr-violet-86 data-[twe-nav-active]:text-white"
-                    data-twe-toggle="pill" data-twe-target="#tabs-home01" data-twe-nav-active role="tab"
-                    aria-controls="tabs-home01" aria-selected="true">Persyaratan Kontributor</a>
-            </li>
-            <li role="presentation" class="flex-auto text-center">
-                <a id="tatacara" href="#tabs-profile01"
-                    class="my-2 block px-[16px] py-[16px] text-[16px] rounded-[12px] lg:text-[20px] leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-gr-violet-86 hover:text-white focus:isolate focus:border-transparent data-[twe-nav-active]:bg-gr-violet-86 data-[twe-nav-active]:text-white"
-                    data-twe-toggle="pill" data-twe-target="#tabs-profile01" role="tab" aria-controls="tabs-profile01"
-                    aria-selected="false">Alur Pendaftaran</a>
-            </li>
-            <li role="presentation" class="flex-auto text-center">
-                <a href="#tabs-messages01"
-                    class="my-2 block px-[16px] py-[16px] text-[16px] rounded-[12px] lg:text-[20px] leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-gr-violet-86 hover:text-white focus:isolate focus:border-transparent data-[twe-nav-active]:bg-gr-violet-86 data-[twe-nav-active]:text-white"
-                    data-twe-toggle="pill" data-twe-target="#tabs-messages01" role="tab" aria-controls="tabs-messages01"
-                    aria-selected="false">Alur Pelaksanaan</a>
-            </li>
-        </ul>
+        <div class="border border-violet8 rounded-[12px] p-2 mb-5 section" data-animation="animate__fadeInUp">
+            <ul class="grid lg:flex gap-2 list-none flex-row flex-wrap" role="tablist" data-twe-nav-ref>
+                <li role="presentation" class="flex-auto text-center">
+                    <a href="#tabs-home01"
+                        class="block px-[16px] py-[16px] text-[16px] rounded-[12px] leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-gr-violet-86 hover:text-white focus:isolate focus:border-transparent data-[twe-nav-active]:bg-gr-violet-86 data-[twe-nav-active]:text-white"
+                        data-twe-toggle="pill" data-twe-target="#tabs-home01" data-twe-nav-active role="tab"
+                        aria-controls="tabs-home01" aria-selected="true">Persyaratan Kontributor</a>
+                </li>
+                <li role="presentation" class="flex-auto text-center">
+                    <a href="#tabs-profile01"
+                        class="block px-[16px] py-[16px] text-[16px] rounded-[12px] leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-gr-violet-86 hover:text-white focus:isolate focus:border-transparent data-[twe-nav-active]:bg-gr-violet-86 data-[twe-nav-active]:text-white"
+                        data-twe-toggle="pill" data-twe-target="#tabs-profile01" role="tab"
+                        aria-controls="tabs-profile01" aria-selected="false">Alur Pendaftaran</a>
+                </li>
+                <li role="presentation" class="flex-auto text-center">
+                    <a href="#tabs-messages01"
+                        class="block px-[16px] py-[16px] text-[16px] rounded-[12px] leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-gr-violet-86 hover:text-white focus:isolate focus:border-transparent data-[twe-nav-active]:bg-gr-violet-86 data-[twe-nav-active]:text-white"
+                        data-twe-toggle="pill" data-twe-target="#tabs-messages01" role="tab"
+                        aria-controls="tabs-messages01" aria-selected="false">Alur Pelaksanaan</a>
+                </li>
+            </ul>
+        </div>
 
         <!--Tabs content-->
         <div class="mb-6">
             <!-- Tabs content 1 -->
             <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                 id="tabs-home01" role="tabpanel" aria-labelledby="tabs-home-tab01" data-twe-tab-active>
-                <div class="lg:grid lg:grid-cols-12">
+                <div class="lg:grid lg:grid-cols-12 section" data-animation="animate__fadeIn">
                     <div class="col-span-7">
-                        <h3 class="text-[20px] lg:text-[48px] text-violet11">Persyaratan Kontributor</h3>
-                        <p class="text-[16px] lg:text-[20px] text-biruLaut9 mb-[36px]">Last updated: 01 September 2024
+                        <h3 class="text-[16px] lg:text-[32px] text-violet11">Persyaratan Kontributor</h3>
+                        <p class="text-[16px] text-biruLaut9 mb-[36px]">Last updated: 01 September 2024
                         </p>
-
                         <div class="lg:hidden col-span-5 flex justify-center items-center">
                             <img src="../src/img/persyaratan.svg" alt="">
                         </div>
@@ -648,41 +1060,42 @@
                         <p class="text-[20px] lg:text-[24px] text-violet11 leading-[150%]">Pastikan Anda sesuai dengan
                             Kriteria
                             berikut:</p>
-                        <p class="text-[16px] lg:text-[20px] text-biruLaut10 mb-[12px]">Lorem ipsum dolor sit amet,
-                            consectetur
-                            adipiscing elit. Ut et massa mi. Aliquam in hendrerit
-                            urna. Pellentesque sit
-                            amet sapien fringilla, mattis ligula consectetur.</p>
                         <div class="lg:text-[20px] text-biruLaut10">
-                            <p>1. Lorem Ipsum dolor sit amet</p>
-                            <p>2. Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <p>3. Lorem Ipsum dolor sit amet</p>
-                            <p>4. Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <p>5. Lorem Ipsum dolor sit amet</p>
-                            <p>6. Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>1. Warga Negara Indonesia.</p>
+                            <p>2. Minimal D-3</p>
+                            <p>3. Memahami kurikulum yang sedang dikembangkan dan perangkatnya.</p>
+                            <p>4. Berpengalaman dalam bidang keilmuan dan pendidikan minimal 2 tahun.</p>
+                            <p>5. Mahir mengoperasikan perangkat lunak pengolah kata dan angka (minimal: Ms. Word, Ms.
+                                Excel, Ms. Powerpoint, Google Docs,
+                                Google Spreadsheet, Google Slide)</p>
+                            <p class="text-red-600">6. Individu yang memiliki kredibilitas dan kompeten dalam
+                                pengembangan Kurikulum dan
+                                pembelajaran</p>
                         </div>
                     </div>
-                    <div class="hidden lg:block col-span-5 flex justify-center items-center">
+                    <div class=" lg:block col-span-5 flex justify-center items-center">
                         <img src="../src/img/persyaratan.svg" alt="">
                     </div>
                 </div>
             </div>
             <!-- Tabs content 2   -->
-            <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                id="tabs-profile01" role="tabpanel" aria-labelledby="tabs-profile-tab01">
-                <h3 class="text-[20px] lg:text-[48px] text-violet11">Alur Pendaftaran</h3>
-                <p class="text-[16px] lg:text-[20px] text-biruLaut9 mb-[36px]">Last updated: 01 September 2024
+            <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block section"
+                data-animation="animate__fadeIn" id="tabs-profile01" role="tabpanel"
+                aria-labelledby="tabs-profile-tab01">
+                <h3 class="text-[16px] lg:text-[32px] text-violet11">Alur Pendaftaran</h3>
+                <p class="text-[16px] text-biruLaut9 mb-[36px]">Last updated: 01 September 2024
                 </p>
                 <div class="flex justify-center items-center">
                     <img src="../src/img/pendaftaran.svg" alt="">
                 </div>
             </div>
             <!-- Tabs content 3 -->
-            <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                id="tabs-messages01" role="tabpanel" aria-labelledby="tabs-profile-tab01">
-                <h3 class="text-[20px] lg:text-[48px] text-violet11">Alur Pelaksanaan</h3>
-                <p class="text-[16px] lg:text-[20px] text-biruLaut9 mb-[36px]">Last updated: 01 September 2024
-                <p class="text-[16px] lg:text-[20px] text-biruLaut10 max-w-[1180px] mb-[84px]">Lorem ipsum dolor sit
+            <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block section"
+                data-animation="animate__fadeIn" id="tabs-messages01" role="tabpanel"
+                aria-labelledby="tabs-profile-tab01">
+                <h3 class="text-[16px] lg:text-[32px] text-violet11">Alur Pelaksanaan</h3>
+                <p class="text-[16px] text-biruLaut9 mb-[36px]">Last updated: 01 September 2024
+                <p class="text-[16px] text-biruLaut10 max-w-[1180px] mb-[84px]">Lorem ipsum dolor sit
                     amet,
                     consectetur adipiscing
                     elit. Ut et
@@ -742,14 +1155,15 @@
 
 
     <!-- Jadwal Pelaksanaan -->
-    <div class="grid px-[16px] lg:px-[160px] lg:gap-[64px] mb-[48px] lg:mb-[140px]">
-        <div class="grid justify-center items-center mb-[24px] lg:gap-[12px]">
+    <div class="md:container lg:container px-[16px] grid lg:gap-[64px] mb-[48px] lg:mb-[100px]">
+        <div class="grid justify-center items-center mb-[24px] lg:gap-[12px] section"
+            data-animation="animate__fadeInUp">
             <h1 class="text-center text-[24px] lg:text-[48px] text-violet11">Jadwal Pelaksanaan</h1>
             <p class="text-center text-[16px] text-biruLaut9 lg:text-[20px]">Berikut adalah jadwal pelaksanaan program
                 berdasarkan
                 tahapannya.</p>
         </div>
-        <div class="flex justify-center items-center">
+        <div class="flex justify-center items-center section" data-animation="animate__fadeInUp">
             <img class="w-full hidden lg:block" src="../src/img/stepper.svg" alt="">
             <img class="w-1/2 mx-auto lg:hidden" src="../src/img/stepper2.svg" alt="">
         </div>
@@ -757,189 +1171,246 @@
     <!-- Jadwal Pelaksanaan end -->
 
     <!-- Testimoni (pagedone) -->
-    <div class="px-[16px] py-[40px] lg:px-[160px] lg:py-[100px] bg-gr-hijau-12">
-        <h1 class="text-center font-semibold text-[32px] lg:text-[48px] text-violet11 mb-[16px]">Testimoni</h1>
-        <div class="w-full relative">
-            <div class="swiper default-carousel swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class=" rounded-2xl h-full flex justify-center items-start">
-                            <div>
-                                <p class="text-[16px] lg:text-[32px] text-center mb-[16px] lg:mb-[32px]">1. Lorem ipsum
-                                    dolor sit amet,
-                                    consectetur
-                                    adipiscing
-                                    elit.
-                                    Ut et massa
-                                    mi.
-                                    Aliquam in
-                                    hendrerit urna. Pellentesque sit</p>
-                                <div class="flex justify-center items-center mb-[16px] lg:mb-[32px]">
-                                    <img class="w-[76px] lg:w-[154px] border border-1 border-violet6 rounded-full"
-                                        src="../src/img/person1.svg" alt="">
-                                </div>
-                                <div class="grid gap-[4px] lg:gap-[8px]">
-                                    <h4 class="text-[12px] font-semibold text-violet11 text-center lg:text-[24px]">John
-                                        Doe
-                                    </h4>
-                                    <p class="text-[12px] text-biruLaut9 text-center lg:text-[24px]">Position. From
-                                        Where
-                                    </p>
-                                </div>
+    <div class="py-[40px] lg:py-[100px] bg-gr-hijau-12">
+        <div class="md:container lg:container px-[16px]">
+            <h1 class="text-center font-semibold text-[32px] lg:text-[48px] text-violet11 mb-[16px] section"
+                data-animation="animate__fadeInUp">Testimoni</h1>
+            <div class="w-full relative">
+                <div class="swiper default-carousel swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class=" rounded-2xl h-full flex justify-center items-start">
+                                <div class="">
+                                    <p class="text-[16px] text-violet11 lg:text-[32px] text-center mb-[16px] lg:mb-[32px] section"
+                                        data-animation="animate__fadeInUp">
+                                        Terima
+                                        kasih kepada Pusat Kurikulum dan Pembelajaran yang menfasilitasi guru dan
+                                        sekolah untuk mendalami IKM. Pelibatan
+                                        guru dalam berbagai kegiatan sangat positif sehingga kebijakan yang diputuskan
+                                        mengakomodir semua kepentingan.</p>
+                                    <div class="flex justify-center items-center mb-[16px] lg:mb-[32px]">
+                                        <img class="w-[76px] lg:w-[154px] border border-1 border-violet6 rounded-full"
+                                            src="../src/img/person1.svg" alt="">
+                                    </div>
+                                    <div class="grid gap-[4px] lg:gap-[8px]">
+                                        <h4 class="text-[12px] font-semibold text-violet11 text-center lg:text-[24px]">
+                                            B.J. Gunawan
+                                        </h4>
+                                        <p class="text-[12px] text-biruLaut9 text-center lg:text-[24px]">SMA Islam
+                                            Athirah
+                                        </p>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rounded-2xl h-full flex justify-center items-start">
+                                <div>
+                                    <p
+                                        class="text-[16px] text-violet11 lg:text-[32px] text-center mb-[16px] lg:mb-[32px]">
+                                        Menambah
+                                        wawasan, pengalaman dan dalam kegiatan selalu mendapatkan bimbingan serta
+                                        pelayanan yang sangat baik.</p>
+                                    <div class="flex justify-center items-center mb-[16px] lg:mb-[32px]">
+                                        <img class="w-[76px] lg:w-[154px] border border-1 border-violet6 rounded-full"
+                                            src="../src/img/person1.svg" alt="">
+                                    </div>
+                                    <div class="grid gap-[4px] lg:gap-[8px]">
+                                        <h4 class="text-[12px] font-semibold text-violet11 text-center lg:text-[24px]">
+                                            Hanifah
+                                        </h4>
+                                        <p class="text-[12px] text-biruLaut9 text-center lg:text-[24px]">SLBN Citeureup
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" rounded-2xl h-full flex justify-center items-start">
+                                <div>
+                                    <p
+                                        class="text-[16px] text-violet11 lg:text-[32px] text-center mb-[16px] lg:mb-[32px]">
+                                        Kegiatan
+                                        puskurjar ini sangat menambah wawasan dan pengalaman sehingga sangat bermanfaat
+                                        dalam pelaksanaan pembelajaran.
+                                        Dalam kegiatan saya mendapatkan layanan dan bimbingan dengan baik dari panitia
+                                    </p>
+                                    <div class="flex justify-center items-center mb-[16px] lg:mb-[32px]">
+                                        <img class="w-[76px] lg:w-[154px] border border-1 border-violet6 rounded-full"
+                                            src="../src/img/person1.svg" alt="">
+                                    </div>
+                                    <div class="grid gap-[4px] lg:gap-[8px]">
+                                        <h4 class="text-[12px] font-semibold text-violet11 text-center lg:text-[24px]">
+                                            Anna Dastiana Ismayanti
+                                        </h4>
+                                        <p class="text-[12px] text-biruLaut9 text-center lg:text-[24px]">SLBN-A
+                                            Citeureup Cimahi
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" rounded-2xl h-full flex justify-center items-start">
+                                <div>
+                                    <p
+                                        class="text-[16px] text-violet11 lg:text-[32px] text-center mb-[16px] lg:mb-[32px]">
+                                        Kegiatan
+                                        dilaksanakan dengan tertib. Proses kerja kelompok terlaksana dengan baik dan
+                                        menghasilkan luaran sesuai target.
+                                        Pendampingan yang dilakukan panitia juga baik dan ramah.
+                                    </p>
+                                    <div class="flex justify-center items-center mb-[16px] lg:mb-[32px]">
+                                        <img class="w-[76px] lg:w-[154px] border border-1 border-violet6 rounded-full"
+                                            src="../src/img/person1.svg" alt="">
+                                    </div>
+                                    <div class="grid gap-[4px] lg:gap-[8px]">
+                                        <h4 class="text-[12px] font-semibold text-violet11 text-center lg:text-[24px]">
+                                            Mohammad Anwar
+                                        </h4>
+                                        <p class="text-[12px] text-biruLaut9 text-center lg:text-[24px]">SLBN-A
+                                            Universitas Sebelas Maret
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" rounded-2xl h-full flex justify-center items-start">
+                                <div>
+                                    <p
+                                        class="text-[16px] text-violet11 lg:text-[32px] text-center mb-[16px] lg:mb-[32px]">
+                                        Saya sangat
+                                        senang mengikuti kegiatan ini karena banyak ilmu yang bisa saya dapatkan, selain
+                                        itu bisa bertemu dengan
+                                        orang-orang hebat. Fasilitas yang disediakan sudah nyaman. Semoga kedepannya
+                                        akan ada kegiatan semacam ini untuk
+                                        mengasah kemampuan saya sebagai tenaga pengajar bahasa korea yang terus masih
+                                        belajar.
+                                    </p>
+                                    <div class="flex justify-center items-center mb-[16px] lg:mb-[32px]">
+                                        <img class="w-[76px] lg:w-[154px] border border-1 border-violet6 rounded-full"
+                                            src="../src/img/person1.svg" alt="">
+                                    </div>
+                                    <div class="grid gap-[4px] lg:gap-[8px]">
+                                        <h4 class="text-[12px] font-semibold text-violet11 text-center lg:text-[24px]">
+                                            Nabil Aswar
+                                        </h4>
+                                        <p class="text-[12px] text-biruLaut9 text-center lg:text-[24px]">SLBN-A
+                                            MAN 4 Sukabumi
+                                        </p>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="rounded-2xl h-full flex justify-center items-start">
-                            <div>
-                                <p class="text-[16px] lg:text-[32px] text-center mb-[16px] lg:mb-[32px]">2. Lorem ipsum
-                                    dolor sit amet,
-                                    consectetur
-                                    adipiscing
-                                    elit.
-                                    Ut et massa
-                                    mi.
-                                    Aliquam in
-                                    hendrerit urna. Pellentesque sit</p>
-                                <div class="flex justify-center items-center mb-[16px] lg:mb-[32px]">
-                                    <img class="w-[76px] lg:w-[154px] border border-1 border-violet6 rounded-full"
-                                        src="../src/img/person1.svg" alt="">
-                                </div>
-                                <div class="grid gap-[4px] lg:gap-[8px]">
-                                    <h4 class="text-[12px] font-semibold text-violet11 text-center lg:text-[24px]">John
-                                        Doe
-                                    </h4>
-                                    <p class="text-[12px] text-biruLaut9 text-center lg:text-[24px]">Position. From
-                                        Where
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
+                    <div class="flex items-center gap-8 lg:justify-start justify-center">
+                        <button id="slider-button-left"
+                            class="swiper-button-prev !w-[37px] !h-[37px] lg:!w-[74px] lg:!h-[74px] !p-2 flex justify-center items-center border border-solid border-violet6 transition-all duration-500 rounded-full !top-2/4 !left-5 hover:bg-gr-violet-86 hover:text-white after:content-[''] group"
+                            data-carousel-prev>
+                            <svg class="text-violet6 group-hover:text-white lg:!w-[32px]" width="22" height="19"
+                                viewBox="0 0 22 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 9.33333H1M1 9.33333L9.33333 1M1 9.33333L9.33333 17.6667"
+                                    stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button id="slider-button-right"
+                            class="swiper-button-next !w-[37px] !h-[37px] lg:!w-[74px] lg:!h-[74px] !p-2 flex justify-center items-center border border-solid border-violet6 transition-all duration-500 rounded-full !top-2/4 !right-5 hover:bg-gr-violet-86 hover:text-white after:content-[''] group"
+                            data-carousel-next>
+                            <svg class="text-violet6 group-hover:text-white lg:!w-[32px]" width="22" height="19"
+                                viewBox="0 0 22 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 9.33333H21M21 9.33333L12.6667 1M21 9.33333L12.6667 17.6667"
+                                    stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
                     </div>
-                    <div class="swiper-slide">
-                        <div class=" rounded-2xl h-full flex justify-center items-start">
-                            <div>
-                                <p class="text-[16px] lg:text-[32px] text-center mb-[16px] lg:mb-[32px]">3. Lorem ipsum
-                                    dolor sit amet,
-                                    consectetur
-                                    adipiscing
-                                    elit.
-                                    Ut et massa
-                                    mi.
-                                    Aliquam in
-                                    hendrerit urna. Pellentesque sit</p>
-                                <div class="flex justify-center items-center mb-[16px] lg:mb-[32px]">
-                                    <img class="w-[76px] lg:w-[154px] border border-1 border-violet6 rounded-full"
-                                        src="../src/img/person1.svg" alt="">
-                                </div>
-                                <div class="grid gap-[4px] lg:gap-[8px]">
-                                    <h4 class="text-[12px] font-semibold text-violet11 text-center lg:text-[24px]">John
-                                        Doe
-                                    </h4>
-                                    <p class="text-[12px] text-biruLaut9 text-center lg:text-[24px]">Position. From
-                                        Where
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
                 </div>
-                <div class="flex items-center gap-8 lg:justify-start justify-center">
-                    <button id="slider-button-left"
-                        class="swiper-button-prev !w-[37px] !h-[37px] lg:!w-[74px] lg:!h-[74px] !p-2 flex justify-center items-center border border-solid border-violet6 transition-all duration-500 rounded-full !top-2/4 !left-5 hover:bg-gr-violet-86 hover:text-white after:content-['']"
-                        data-carousel-prev>
-                        <svg class="text-violet6 hover:text-white lg:!w-[32px]" width="22" height="19"
-                            viewBox="0 0 22 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 9.33333H1M1 9.33333L9.33333 1M1 9.33333L9.33333 17.6667" stroke="currentColor"
-                                stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                    <button id="slider-button-right"
-                        class="swiper-button-next !w-[37px] !h-[37px] lg:!w-[74px] lg:!h-[74px] !p-2 flex justify-center items-center border border-solid border-violet6 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !right-5 hover:bg-gr-violet-86 hover:text-white after:content-['']"
-                        data-carousel-next>
-                        <svg class="text-violet6 hover:text-white lg:!w-[32px]" width="22" height="19"
-                            viewBox="0 0 22 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 9.33333H21M21 9.33333L12.6667 1M21 9.33333L12.6667 17.6667"
-                                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </div>
-                <!-- <div class="swiper-pagination"></div> -->
             </div>
         </div>
+
     </div>
     <!-- Testimoni (pagedone) End -->
 
     <!-- Footer -->
-    <footer class="bg-violet11 block lg:grid grid-cols-12 px-[16px] py-[40px] lg:px-[160px] lg:py-[80px]">
-        <div class="block lg:flex justify-between">
-            <div class="lg:col-span-6 w-full mb-[36px]">
-                <img class="h-[60px] mb-4 lg:h-[80px] lg:mb-6" src="../src/img/logo-puskurjar-text-white.svg" alt="">
-                <p class="text-white text-[14px] mb-4 lg:text-[20px] lg:leading-[180%] lg:mb-[64px]">Lorem ipsum dolor
-                    sit,
-                    amet
-                    consectetur
-                    adipisicing elit. <br>
-                    Corporis,
-                    culpa!
-                </p>
-                <div class="flex gap-[32px] mb-4 lg:mb-[64px]">
-                    <a href="#">
-                        <img class="opacity-50 hover:opacity-100" src="../src/img/icon/x.svg" alt="">
-                    </a>
-                    <a href="#">
-                        <img class="opacity-50 hover:opacity-100" src="../src/img/icon/ig.svg" alt="">
-                    </a>
-                    <a href="#">
-                        <img class="opacity-50 hover:opacity-100" src="../src/img/icon/fb.svg" alt="">
-                    </a>
-                    <a href="#">
-                        <img class="opacity-50 hover:opacity-100" src="../src/img/icon/thread.svg" alt="">
-                    </a>
-                </div>
-                <p class="text-white mb-4">Hak Cipta &copy; 2024 Pusat Kurikulum dan Pembelajaran
-                </p>
-            </div>
-            <div class="flex text-white text-[12px] lg:text-[16px] justify-between lg:col-span-6 w-full">
-                <div class="block">
-                    <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Product</h5>
-                    <div class="grid">
-                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
-                            Ipsum</a>
-                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
-                            Ipsum</a>
-                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
-                            Ipsum</a>
+    <footer class="bg-violet11 block lg:grid grid-cols-12 py-[40px] lg:py-[80px]">
+        <div class="md:container lg:container px-[16px]">
+            <div class="block lg:flex justify-between">
+                <div class="lg:col-span-6 w-full mb-[36px]">
+                    <img class="h-[60px] mb-4 lg:h-[80px] lg:mb-6" src="../src/img/logo-puskurjar-text-white.svg"
+                        alt="">
+                    <p class="text-white text-[14px] mb-4 lg:text-[20px] lg:leading-[180%] lg:mb-[64px]">Lorem ipsum
+                        dolor
+                        sit,
+                        amet
+                        consectetur
+                        adipisicing elit. <br>
+                        Corporis,
+                        culpa!
+                    </p>
+                    <div class="flex gap-[32px] mb-4 lg:mb-[64px]">
+                        <a href="#">
+                            <img class="opacity-50 hover:opacity-100" src="../src/img/icon/x.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="opacity-50 hover:opacity-100" src="../src/img/icon/ig.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="opacity-50 hover:opacity-100" src="../src/img/icon/fb.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="opacity-50 hover:opacity-100" src="../src/img/icon/thread.svg" alt="">
+                        </a>
                     </div>
+                    <p class="text-white mb-4">Hak Cipta &copy; 2024 Pusat Kurikulum dan Pembelajaran
+                    </p>
                 </div>
-                <div class="block">
-                    <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Company</h5>
-                    <div class="grid">
-                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
-                            Ipsum</a>
-                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
-                            Ipsum</a>
-                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
-                            Ipsum</a>
+                <div class="flex text-white text-[12px] lg:text-[16px] justify-between lg:col-span-6 w-full">
+                    <div class="block">
+                        <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Product</h5>
+                        <div class="grid">
+                            <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                                Ipsum</a>
+                            <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                                Ipsum</a>
+                            <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                                Ipsum</a>
+                        </div>
                     </div>
-                </div>
-                <div class="block">
-                    <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Social</h5>
-                    <div class="grid">
-                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
-                            Ipsum</a>
-                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
-                            Ipsum</a>
-                        <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
-                            Ipsum</a>
+                    <div class="block">
+                        <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Company</h5>
+                        <div class="grid">
+                            <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                                Ipsum</a>
+                            <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                                Ipsum</a>
+                            <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                                Ipsum</a>
+                        </div>
                     </div>
-                </div>
+                    <div class="block">
+                        <h5 class="font-semibold mb-[10px] lg:mb-[20px]">Social</h5>
+                        <div class="grid">
+                            <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                                Ipsum</a>
+                            <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                                Ipsum</a>
+                            <a class="mb-[6px] lg:mb-[10px] hover:underline hover:underline-offset-4" href="#">Lorem
+                                Ipsum</a>
+                        </div>
+                    </div>
 
+                </div>
             </div>
         </div>
+
     </footer>
     <!-- Footer End -->
 
@@ -955,6 +1426,7 @@
 
     <!-- Javascript -->
     <script src="../src/js/main.js"></script>
+    <script src="../src/js/animate.js"></script>
     <script src="../src/js/tw-element.js"></script>
     <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>

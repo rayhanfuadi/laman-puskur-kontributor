@@ -14,13 +14,12 @@ var swiper = new Swiper(".centered-slide-carousel-1", {
   },
   breakpoints: {
     1920: {
-
       slidesPerView: 4,
-      spaceBetween: 16
+      spaceBetween: 8
     },
     1028: {
       slidesPerView: 3,
-      spaceBetween: 16
+      spaceBetween: 8
     },
     240: {
       slidesPerView: 2,
@@ -46,11 +45,11 @@ var swiper2 = new Swiper(".centered-slide-carousel-2", {
   breakpoints: {
     1920: {
       slidesPerView: 4,
-      spaceBetween: 16
+      spaceBetween: 8
     },
     1028: {
       slidesPerView: 3,
-      spaceBetween: 16
+      spaceBetween: 8
     },
     240: {
       slidesPerView: 2,
@@ -76,11 +75,11 @@ var swiper3 = new Swiper(".centered-slide-carousel-3", {
   breakpoints: {
     1920: {
       slidesPerView: 4,
-      spaceBetween: 16
+      spaceBetween: 8
     },
     1028: {
       slidesPerView: 3,
-      spaceBetween: 16
+      spaceBetween: 8
     },
     240: {
       slidesPerView: 2,
@@ -109,7 +108,7 @@ var swiper = new Swiper(".default-carousel", {
 
 
 // navHeader scrool
-window.onscroll = function () {
+window.onscroll = () => {
   const navbar = document.getElementById('navbar');
   if (window.scrollY > 0) {
     navbar.classList.add('drop-shadow-drop3');
@@ -122,12 +121,47 @@ window.onscroll = function () {
 const loginBtn = document.getElementById('loginBtn');
 
 loginBtn.addEventListener("click", () => {
-  console.log("masuk")
   window.location.href = "./login.html"
 })
 
-const registBtn = document.getElementById('registBtn');
 
-registBtn.addEventListener("click", () => {
-  window.location.href = "./regist.html"
-})
+// Ambil elemen modal dan dialog modal
+const modal = document.getElementById("exampleModalLogin");
+const modalDialog = modal.querySelector('[data-twe-modal-dialog-ref]');
+
+// Fungsi untuk menutup modal
+function closeModal() {
+  modal.classList.add("hidden");
+}
+
+// Event listener untuk klik di luar modal
+window.addEventListener("click", function (event) {
+  // Jika klik di luar elemen modal, tutup modal
+  if (event.target === modal) {
+    closeModal();
+  }
+});
+
+// Event listener untuk tombol close jika ada (opsional)
+// const closeButton = document.querySelector(".close-button-selector");
+// closeButton.addEventListener("click", closeModal);
+
+
+// Ambil elemen modal dan dialog modal
+const modal2 = document.getElementById("exampleModalRegist");
+const modalDialog2 = modal2.querySelector('[data-twe-modal-dialog-ref]');
+
+// Fungsi untuk menutup modal
+function closeModal2() {
+  modal2.classList.add("hidden");
+}
+
+// Event listener untuk klik di luar modal
+window.addEventListener("click", function (event) {
+  // Jika klik di luar elemen modal, tutup modal
+  if (event.target === modal2) {
+    closeModal2();
+  }
+});
+
+
