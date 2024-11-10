@@ -3,7 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{html,js}",
     './pages/**/*.{html,js}',
-    "./node_modules/tw-elements/js/**/*.js",
+    // "./node_modules/tw-elements/js/**/*.js",
     "./node_modules/flowbite/**/*.js",
     './pages/**/*.{html,js,jsx,ts,tsx}',
   ],
@@ -161,9 +161,13 @@ module.exports = {
       }
     },
   },
+  daisyui: {
+    themes: ["light", "dark", "cupcake"],
+  },
   plugins: [
-    require("tw-elements/plugin.cjs"),
+    // require("tw-elements/plugin.cjs"),
     require('flowbite/plugin'),
+    require('daisyui'),
   ],
   darkMode: "class"
 }

@@ -125,43 +125,81 @@ loginBtn.addEventListener("click", () => {
 })
 
 
-// Ambil elemen modal dan dialog modal
-const modal = document.getElementById("exampleModalLogin");
-const modalDialog = modal.querySelector('[data-twe-modal-dialog-ref]');
+// // Ambil elemen modal dan dialog modal
+// const modal = document.getElementById("exampleModalLogin");
+// const modalDialog = modal.querySelector('[data-twe-modal-dialog-ref]');
 
-// Fungsi untuk menutup modal
-function closeModal() {
-  modal.classList.add("hidden");
-}
+// // Fungsi untuk menutup modal
+// function closeModal() {
+//   modal.classList.add("hidden");
+// }
 
-// Event listener untuk klik di luar modal
-window.addEventListener("click", function (event) {
-  // Jika klik di luar elemen modal, tutup modal
-  if (event.target === modal) {
-    closeModal();
-  }
-});
+// // Event listener untuk klik di luar modal
+// window.addEventListener("click", function (event) {
+//   // Jika klik di luar elemen modal, tutup modal
+//   if (event.target === modal) {
+//     closeModal();
+//   }
+// });
 
 // Event listener untuk tombol close jika ada (opsional)
 // const closeButton = document.querySelector(".close-button-selector");
 // closeButton.addEventListener("click", closeModal);
 
 
-// Ambil elemen modal dan dialog modal
-const modal2 = document.getElementById("exampleModalRegist");
-const modalDialog2 = modal2.querySelector('[data-twe-modal-dialog-ref]');
+// // Ambil elemen modal dan dialog modal
+// const modal2 = document.getElementById("exampleModalRegist");
+// const modalDialog2 = modal2.querySelector('[data-twe-modal-dialog-ref]');
 
-// Fungsi untuk menutup modal
-function closeModal2() {
-  modal2.classList.add("hidden");
+// // Fungsi untuk menutup modal
+// function closeModal2() {
+//   modal2.classList.add("hidden");
+// }
+
+// // Event listener untuk klik di luar modal
+// window.addEventListener("click", function (event) {
+//   // Jika klik di luar elemen modal, tutup modal
+//   if (event.target === modal2) {
+//     closeModal2();
+//   }
+// });
+
+
+function openModalLogin() {
+  const modal = document.getElementById('my_modal_2');
+  const modalContent = document.getElementById('modalContentLogin');
+  const firstContent = document.getElementById('firstContentLogin');
+
+  // Buka modal
+  modal.showModal();
+
+  firstContent.scrollIntoView({ behavior: 'smooth', block: "start" });
+  // Pindahkan scroll ke atas ketika modal dibuka
+  // modalContent.scrollTop = -10;
 }
 
-// Event listener untuk klik di luar modal
-window.addEventListener("click", function (event) {
-  // Jika klik di luar elemen modal, tutup modal
-  if (event.target === modal2) {
-    closeModal2();
-  }
-});
+function openModalRegist() {
+  const modal = document.getElementById('my_modal_3');
+  const modalContent = document.getElementById('modalContentRegist');
+  const firstContent = document.getElementById('firstContentRegist');
 
+  // Buka modal
+  modal.showModal();
 
+  firstContent.scrollIntoView({ behavior: 'smooth', block: "start" });
+  // Pindahkan scroll ke atas ketika modal dibuka
+  modalContent.scrollTop = 0;
+}
+
+function openModalForget() {
+  const modal = document.getElementById('my_modal_4');
+  const modalContent = document.getElementById('modalContentForget');
+  const firstContent = document.getElementById('firstContentForget');
+
+  // Buka modal
+  modal.showModal();
+
+  firstContent.scrollIntoView({ behavior: 'smooth', block: "start" });
+  // Pindahkan scroll ke atas ketika modal dibuka
+  modalContent.scrollTop = 0;
+}
