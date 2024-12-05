@@ -117,89 +117,55 @@ window.onscroll = () => {
   }
 };
 
-//button masuk
-const loginBtn = document.getElementById('loginBtn');
+// //button masuk
+// const loginBtn = document.getElementById('loginBtn');
 
-loginBtn.addEventListener("click", () => {
-  window.location.href = "./login.html"
-})
-
-
-// // Ambil elemen modal dan dialog modal
-// const modal = document.getElementById("exampleModalLogin");
-// const modalDialog = modal.querySelector('[data-twe-modal-dialog-ref]');
-
-// // Fungsi untuk menutup modal
-// function closeModal() {
-//   modal.classList.add("hidden");
-// }
-
-// // Event listener untuk klik di luar modal
-// window.addEventListener("click", function (event) {
-//   // Jika klik di luar elemen modal, tutup modal
-//   if (event.target === modal) {
-//     closeModal();
-//   }
-// });
-
-// Event listener untuk tombol close jika ada (opsional)
-// const closeButton = document.querySelector(".close-button-selector");
-// closeButton.addEventListener("click", closeModal);
-
-
-// // Ambil elemen modal dan dialog modal
-// const modal2 = document.getElementById("exampleModalRegist");
-// const modalDialog2 = modal2.querySelector('[data-twe-modal-dialog-ref]');
-
-// // Fungsi untuk menutup modal
-// function closeModal2() {
-//   modal2.classList.add("hidden");
-// }
-
-// // Event listener untuk klik di luar modal
-// window.addEventListener("click", function (event) {
-//   // Jika klik di luar elemen modal, tutup modal
-//   if (event.target === modal2) {
-//     closeModal2();
-//   }
-// });
+// loginBtn.addEventListener("click", () => {
+//   window.location.href = "./login.html"
+// })
 
 
 function openModalLogin() {
   const modal = document.getElementById('my_modal_2');
   const modalContent = document.getElementById('modalContentLogin');
   const firstContent = document.getElementById('firstContentLogin');
+  const usernameInput = document.getElementById("fieldActive");
 
-  // Buka modal
+
   modal.showModal();
+  if (usernameInput) {
+    usernameInput.focus();
+  }
 
   firstContent.scrollIntoView({ behavior: 'smooth', block: "start" });
-  // Pindahkan scroll ke atas ketika modal dibuka
-  // modalContent.scrollTop = -10;
 }
 
 function openModalRegist() {
   const modal = document.getElementById('my_modal_3');
   const modalContent = document.getElementById('modalContentRegist');
   const firstContent = document.getElementById('firstContentRegist');
+  const usernameInput = document.getElementById("fieldActive");
 
   // Buka modal
   modal.showModal();
+  if (usernameInput) {
+    usernameInput.focus();
+  }
 
   firstContent.scrollIntoView({ behavior: 'smooth', block: "start" });
-  // Pindahkan scroll ke atas ketika modal dibuka
-  modalContent.scrollTop = 0;
 }
 
 function openModalForget() {
   const modal = document.getElementById('my_modal_4');
   const modalContent = document.getElementById('modalContentForget');
   const firstContent = document.getElementById('firstContentForget');
+  const usernameInput = document.getElementById("fieldActive");
 
   // Buka modal
   modal.showModal();
+  if (usernameInput) {
+    usernameInput.focus();
+  }
 
   firstContent.scrollIntoView({ behavior: 'smooth', block: "start" });
-  // Pindahkan scroll ke atas ketika modal dibuka
-  modalContent.scrollTop = 0;
 }

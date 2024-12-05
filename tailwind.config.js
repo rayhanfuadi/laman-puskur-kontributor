@@ -3,11 +3,11 @@ module.exports = {
   content: [
     "./src/**/*.{html,js}",
     './pages/**/*.{html,js}',
-    // "./node_modules/tw-elements/js/**/*.js",
+    "./node_modules/tw-elements/js/**/*.js",
     "./node_modules/flowbite/**/*.js",
+    "./node_modules/daisyui/**/*.js",
     './pages/**/*.{html,js,jsx,ts,tsx}',
   ],
-  darkMode: 'class',
   theme: {
     container: {
       center: true,
@@ -165,10 +165,9 @@ module.exports = {
     themes: ["light", "dark", "cupcake"],
   },
   plugins: [
-    // require("tw-elements/plugin.cjs"),
+    require("tw-elements/plugin.cjs"),
     require('flowbite/plugin'),
     require('daisyui'),
   ],
-  darkMode: "class"
 }
 
