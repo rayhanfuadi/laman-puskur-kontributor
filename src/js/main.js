@@ -14,13 +14,12 @@ var swiper = new Swiper(".centered-slide-carousel-1", {
   },
   breakpoints: {
     1920: {
-
       slidesPerView: 4,
-      spaceBetween: 16
+      spaceBetween: 8
     },
     1028: {
       slidesPerView: 3,
-      spaceBetween: 16
+      spaceBetween: 8
     },
     240: {
       slidesPerView: 2,
@@ -46,11 +45,11 @@ var swiper2 = new Swiper(".centered-slide-carousel-2", {
   breakpoints: {
     1920: {
       slidesPerView: 4,
-      spaceBetween: 16
+      spaceBetween: 8
     },
     1028: {
       slidesPerView: 3,
-      spaceBetween: 16
+      spaceBetween: 8
     },
     240: {
       slidesPerView: 2,
@@ -76,11 +75,11 @@ var swiper3 = new Swiper(".centered-slide-carousel-3", {
   breakpoints: {
     1920: {
       slidesPerView: 4,
-      spaceBetween: 16
+      spaceBetween: 8
     },
     1028: {
       slidesPerView: 3,
-      spaceBetween: 16
+      spaceBetween: 8
     },
     240: {
       slidesPerView: 2,
@@ -109,7 +108,7 @@ var swiper = new Swiper(".default-carousel", {
 
 
 // navHeader scrool
-window.onscroll = function () {
+window.onscroll = () => {
   const navbar = document.getElementById('navbar');
   if (window.scrollY > 0) {
     navbar.classList.add('drop-shadow-drop3');
@@ -118,16 +117,55 @@ window.onscroll = function () {
   }
 };
 
-//button masuk
-const loginBtn = document.getElementById('loginBtn');
+// //button masuk
+// const loginBtn = document.getElementById('loginBtn');
 
-loginBtn.addEventListener("click", () => {
-  console.log("masuk")
-  window.location.href = "./login.html"
-})
+// loginBtn.addEventListener("click", () => {
+//   window.location.href = "./login.html"
+// })
 
-const registBtn = document.getElementById('registBtn');
 
-registBtn.addEventListener("click", () => {
-  window.location.href = "./regist.html"
-})
+function openModalLogin() {
+  const modal = document.getElementById('my_modal_2');
+  const modalContent = document.getElementById('modalContentLogin');
+  const firstContent = document.getElementById('firstContentLogin');
+  const usernameInput = document.getElementById("fieldActive");
+
+
+  modal.showModal();
+  if (usernameInput) {
+    usernameInput.focus();
+  }
+
+  firstContent.scrollIntoView({ behavior: 'smooth', block: "start" });
+}
+
+function openModalRegist() {
+  const modal = document.getElementById('my_modal_3');
+  const modalContent = document.getElementById('modalContentRegist');
+  const firstContent = document.getElementById('firstContentRegist');
+  const usernameInput = document.getElementById("fieldActive");
+
+  // Buka modal
+  modal.showModal();
+  if (usernameInput) {
+    usernameInput.focus();
+  }
+
+  firstContent.scrollIntoView({ behavior: 'smooth', block: "start" });
+}
+
+function openModalForget() {
+  const modal = document.getElementById('my_modal_4');
+  const modalContent = document.getElementById('modalContentForget');
+  const firstContent = document.getElementById('firstContentForget');
+  const usernameInput = document.getElementById("fieldActive");
+
+  // Buka modal
+  modal.showModal();
+  if (usernameInput) {
+    usernameInput.focus();
+  }
+
+  firstContent.scrollIntoView({ behavior: 'smooth', block: "start" });
+}

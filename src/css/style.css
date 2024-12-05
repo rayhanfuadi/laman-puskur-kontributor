@@ -1,5 +1,9 @@
 body {
-    font-family: 'Sora', sans-serif;
+      font-family: 'Sora', sans-serif;
+}
+
+html {
+      scroll-behavior: smooth;
 }
 
 .swiper-wrapper {
@@ -9,8 +13,20 @@ body {
       -webkit-transition-timing-function: linear !important;
       transition-timing-function: linear !important;
       position: relative;
-      
+
 }
+
 .swiper-pagination-bullet {
       background: #4f46e5;
+}
+
+/* Dasar animasi */
+.section {
+      opacity: 0;
+      transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.section-scroll {
+      scroll-margin-top: 80px;
+      /* Sesuaikan dengan tinggi navbar */
 }

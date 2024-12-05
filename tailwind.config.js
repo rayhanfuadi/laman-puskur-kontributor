@@ -5,13 +5,21 @@ module.exports = {
     './pages/**/*.{html,js}',
     "./node_modules/tw-elements/js/**/*.js",
     "./node_modules/flowbite/**/*.js",
-    'index.html'
+    "./node_modules/daisyui/**/*.js",
+    './pages/**/*.{html,js,jsx,ts,tsx}',
   ],
-  darkMode: 'class',
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '16px',
+        lg: '2rem',
+        xl: '10rem',
+        '2xl': '10rem',
+      },
+    },
     extend: {
       screens: {
-        'sm': '640px',
         'md': '768px',
         'lg': '1024px',
         'xl': '1280px',
@@ -153,10 +161,13 @@ module.exports = {
       }
     },
   },
+  daisyui: {
+    themes: ["light", "dark", "cupcake"],
+  },
   plugins: [
     require("tw-elements/plugin.cjs"),
     require('flowbite/plugin'),
+    require('daisyui'),
   ],
-  darkMode: "class"
 }
 
